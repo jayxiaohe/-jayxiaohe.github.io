@@ -16,5 +16,6 @@ jobs: # 工作流
       - name: run deploy.sh # 步骤3 （部署到github gh分支）
         env: # 设置环境变量
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }} # toKen私密变量
-        run: npm install && npm run deploy # 执行的命令  
+        run: npm run deploy # 执行的命令，即自动执行 deploy.sh
+        #run: npm install && npm run deploy # 执行的命令  
         # package.json 中添加 "deploy": "bash deploy.sh"
