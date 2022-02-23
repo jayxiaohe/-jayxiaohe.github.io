@@ -1,5 +1,5 @@
 name: CI
-
+# 修改secret key
 # 在master分支发生push事件时触发。
 # 参考：https://xugaoyi.com/pages/6b9d359ec5aa5019/#%E5%AE%9E%E7%8E%B0
 on: 
