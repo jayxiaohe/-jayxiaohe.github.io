@@ -5,10 +5,7 @@
   "scripts": {
     "dev": "vuepress dev . --open --host \"localhost\"",
     "build": "vuepress build .",
-	"docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
-	"blogs:dev": "vuepress dev blogs",
-    "blogs:build": "vuepress build blogs"
+	"deploy": "bash deploy.sh"
   },
   "devDependencies": {
     "@vuepress/plugin-medium-zoom": "^1.9.7",
