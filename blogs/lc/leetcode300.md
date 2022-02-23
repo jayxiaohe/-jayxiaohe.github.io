@@ -1,0 +1,55 @@
+---
+title: 'LeetCode-300 最大上升子序列'
+date: 2020-03-14 23:18:06
+tags: [DP]
+categories: [算法]
+publish: true
+hideInList: false
+feature: /post-images/leetcode300.png
+isTop: false
+---
+## 📋 代码1 - 动态规划
+```java
+public class Solution {
+    public int lengthOfLIS(int[] nums) {
+		// 判断入参。如果是以下情况则直接返回0。
+		if (nums == null || nums.length == 0) return 0;
+		int max = 1;
+		int[] dp = new int[nums.length];
+		// 初始化dp数组中的元素，全部置为1。因为子序列长度至少为1（特殊情况第1行已经判断过）
+		Arrays.fill(dp, 1);
+		for (int i = 1; i < dp.length; i++) {
+			for (int j = 0; j < i; j++) {
+				if (nums[i] > nums[j]) {
+					// 如果i处元素大于j处元素，则给dp[i]赋值。
+					dp[i] = Math.max(dp[i], dp[j] + 1);
+				}
+			}
+			max = Math.max(dp[i], max);
+			// 内部for执行一圈下来，dp[i]的值和在 i处的max的值都确定了。
+		}
+		//外部for执行完毕后，dp数组的值都设置完了，最终的max也得到了。返回max即可。
+		return max;
+	}
+}
+```
+<br/>
+
+## 💡 思路1 - 动态规划
+动态规划的重点，就是找到状态转移方程。本题也不例外。
+定义 dp[i] 为前 i 个元素中的最长上升子序列的长度（包含 nums[i] ）。那么最大值就是
+max( dp[i] )，即dp数组中的最大值。
+从小到大计算dp[i]，在计算dp[i]前，i 之前的值已经得到。则状态转移方程为：
+dp[i] = max(dp[j]) + 1
+其中，j < i，且必须满足 nums[i] > nums[j]。对每个 i ，遍历完0~i-1，如果存在这样的值（j < i，且 nums[i] > nums[j]），则dp[i] 就是dp[j] + 1，否则，dp[i]为1。
+为了不再最后遍历dp数组来获取最大值，每确定一个dp[i]就更新一次max。循环结束后，直接返回max即可。
+
+<br/>
+
+## 💡 思路2 - 二分查找
+待补充。
+
+<br/>
+
+<center><a href="https://leetcode-cn.com/problems/longest-increasing-subsequence/" class="LinkCard" target="_blank">LeetCode-300</a></center>
+<br/>
