@@ -19,7 +19,9 @@ fi
 git init
 git add -A
 git commit -m "${msg}"
-git push -f git@github.com:jayxiaohe/jayxiaohe.github.io.git master:gh-pages
+# git push -f git@github.com:jayxiaohe/jayxiaohe.github.io.git master:gh-pages
+# 这种模式下只能用https提交！
+git push -f https://github.com/jayxiaohe/jayxiaohe.github.io.git master:gh-pages
 
 cd -
 rm -rf public/
