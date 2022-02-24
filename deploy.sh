@@ -7,6 +7,9 @@ npm run build
 # 进入生成的文件夹
 cd ./public
 
+# 发布到自定义域名
+echo 'i.iyes.life' > CNAME
+
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='来自github action的自动部署-1'
   githubUrl=git@github.com:jayxiaohe/jayxiaohe.github.io.git

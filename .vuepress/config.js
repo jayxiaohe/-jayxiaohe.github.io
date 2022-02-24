@@ -22,6 +22,7 @@ module.exports = {
   "theme": "reco",
   "themeConfig": {
 	// hpt add start...
+	noFoundPageByTencent: false, // 关闭404
     // 备案
 	"record": "陕ICP备19013443号",
     "recordLink": "/",
@@ -52,7 +53,7 @@ module.exports = {
       },*/
 	  {
         "text": "关于",
-		"link": "/blogs/about",
+		"link": "/m/about",
         "icon": "reco-account"
       }
       /**{
@@ -140,7 +141,7 @@ module.exports = {
 		  // 颜色
 		  theme: "#3eaf7c",//"#f9bcdd",
 		  // 播放顺序为随机
-		  order: "list", //"random"
+		  order: "random", //"list"
 		  // 初始音量
 		  volume: 0.1,
 		  // 关闭歌词显示。可选值： 3 | 1 | 0（0：禁用 lrc 歌词，1：lrc 格式的字符串，3：lrc 文件 url）
@@ -159,6 +160,7 @@ module.exports = {
 	  }
 	}],
 	["@vuepress/nprogress"], // 加载进度条
-    ["reading-progress"] // 阅读进度条
+    ["reading-progress"], // 阅读进度条
+	['flexsearch-pro'] // 全文搜索
   ]
 }

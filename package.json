@@ -5,16 +5,18 @@
   "scripts": {
     "dev": "vuepress dev . --open --host \"localhost\"",
     "build": "vuepress build .",
-	"deploy": "bash deploy.sh"
+    "deploy": "bash deploy.sh"
   },
   "devDependencies": {
     "@vuepress/plugin-medium-zoom": "^1.9.7",
+    "@vuepress/plugin-nprogress": "^1.8.2",
     "vuepress": "1.8.2",
+    "vuepress-plugin-flexsearch-pro": "^1.0.3",
+    "vuepress-plugin-fulltext-search": "^2.2.1",
     "vuepress-plugin-meting": "^0.3.1",
     "vuepress-plugin-nuggets-style-copy": "^1.0.3",
-    "vuepress-theme-reco": "1.6.10",
-	"@vuepress/plugin-nprogress": "^1.8.2",
-	"vuepress-plugin-reading-progress": "^1.0.10"
+    "vuepress-plugin-reading-progress": "^1.0.10",
+    "vuepress-theme-reco": "1.6.10"
   },
-  "description": "记录一点点"
+  "description": "即将打开..."
 }

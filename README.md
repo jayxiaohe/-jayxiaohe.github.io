@@ -4,7 +4,7 @@ heroText: 何鹏涛的博客
 tagline: 万物之中，希望至美。
 # bgImage: '/bg.jpg'
 bgImageStyle: {
-  height: '450px'
+  height: '350px'
 }
 isShowTitleInHome: false
 actionText: Guide
