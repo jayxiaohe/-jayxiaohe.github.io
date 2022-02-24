@@ -1,6 +1,6 @@
 module.exports = {
   "title": "Hpt's Blog",
-  "description": "记录一点点",
+  "description": "万物之中，希望至美。",
   "dest": "public",
   //"base": "/blog",
   "head": [
