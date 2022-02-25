@@ -4,6 +4,10 @@ import localMixin from '@theme/mixins/locales'
 import { interceptRouterError, fixRouterError404 } from '@theme/helpers/other'
 import { install } from 'vue-demi'
 
+// 引入element-ui-步骤1
+import Element from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+
 export default ({
   Vue,
   siteData,
@@ -20,4 +24,6 @@ export default ({
 
   interceptRouterError(router)
   fixRouterError404(router)
+  // 引入element-ui-步骤2
+  Vue.use(Element)
 }

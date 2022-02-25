@@ -22,7 +22,7 @@ module.exports = {
   "theme": "reco",
   "themeConfig": {
 	// hpt add start...
-	noFoundPageByTencent: false, // 关闭404
+	noFoundPageByTencent: false, // 关闭404	
     // 备案
 	"record": "陕ICP备19013443号",
     "recordLink": "/",
@@ -51,6 +51,11 @@ module.exports = {
           }
         ]
       },*/
+	  {
+        "text": "留言",
+		"link": "/m/messageBoard",
+        "icon": "reco-suggestion"
+      },
 	  {
         "text": "关于",
 		"link": "/m/about",
@@ -111,7 +116,16 @@ module.exports = {
     "startYear": "2018",
 	//hpt add...start.
 	"nextLinks": true,
-	"prevLinks": true	
+	"prevLinks": true,
+	// 评论
+	vssueConfig: {
+	  showComment: false,
+      platform: 'github',
+      owner: 'jayxiaohe',
+      repo: 'blog_comments',
+      clientId: 'd987083397f3017cd1c0',
+      clientSecret: '5668ff799fca28547abe3d26115fd19a683d90cd'	  
+    },	
   },
   "markdown": {
     "lineNumbers": true
@@ -161,6 +175,9 @@ module.exports = {
 	}],
 	["@vuepress/nprogress"], // 加载进度条
     ["reading-progress"], // 阅读进度条
-	['flexsearch-pro'] // 全文搜索
+	["flexsearch-pro"], // 全文搜索
+	// 参考：https://lq782655835.github.io/vuepress-plugin-element-ui/
+	// element-ui插件失败问题：https://blog.csdn.net/qq_32855007/article/details/108726430
+	["vuepress-plugin-element-ui"] // element-ui插件
   ]
 }
