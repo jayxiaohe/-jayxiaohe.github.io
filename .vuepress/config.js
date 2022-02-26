@@ -117,15 +117,16 @@ module.exports = {
 	//hpt add...start.
 	"nextLinks": true,
 	"prevLinks": true,
-	// 评论
-	vssueConfig: {
-	  showComment: false,
+	// 评论。切换评论插件
+	/**vssueConfig: {
+	  showComment: true,
+	  locale: 'zh',
       platform: 'github',
       owner: 'jayxiaohe',
       repo: 'blog_comments',
       clientId: 'd987083397f3017cd1c0',
       clientSecret: '5668ff799fca28547abe3d26115fd19a683d90cd'	  
-    },	
+    },*/
   },
   "markdown": {
     "lineNumbers": true
