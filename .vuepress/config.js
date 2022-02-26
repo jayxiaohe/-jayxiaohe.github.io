@@ -171,7 +171,7 @@ module.exports = {
 		  volume: 0.1,
 		  // 关闭歌词显示。可选值： 3 | 1 | 0（0：禁用 lrc 歌词，1：lrc 格式的字符串，3：lrc 文件 url）
 		  lrcType: 0,//0,
-		  preload: 'metadata'
+		  // 暂时注释preload: 'metadata'
 		},
 		mobile: {
 		  // 手机端去掉cover图
