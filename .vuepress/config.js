@@ -161,12 +161,12 @@ module.exports = {
 		  // 颜色
 		  theme: "#3eaf7c",//"#f9bcdd",
 		  // 播放顺序为随机
-		  order: "random", //"list"
+		  order: "list", //"random"
 		  // 初始音量
 		  volume: 0.1,
 		  // 关闭歌词显示。可选值： 3 | 1 | 0（0：禁用 lrc 歌词，1：lrc 格式的字符串，3：lrc 文件 url）
 		  lrcType: 0,//0,
-		  preload: metadata
+		  preload: 'metadata'
 		},
 		mobile: {
 		  // 手机端去掉cover图
