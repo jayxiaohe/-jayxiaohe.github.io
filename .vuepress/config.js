@@ -129,8 +129,10 @@ module.exports = {
       platform: 'github',
       owner: 'jayxiaohe',
       repo: 'blog_comments',
-      clientId: 'd987083397f3017cd1c0',
-      clientSecret: '5668ff799fca28547abe3d26115fd19a683d90cd'	  
+      //clientId: 'd987083397f3017cd1c0',
+      //clientSecret: '5668ff799fca28547abe3d26115fd19a683d90cd'	  
+	  clientId: '9663b810da543d1a1dc1',
+	  clientSecret: '22d747bf02709b75bfdcc0a31faa37f87ce67548'
     }
   },
   "markdown": {
