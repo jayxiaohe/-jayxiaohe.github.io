@@ -16,6 +16,7 @@
     "vuepress-plugin-fulltext-search": "^2.2.1",
     "vuepress-plugin-meting": "^0.3.1",
     "vuepress-plugin-nuggets-style-copy": "^1.0.3",
+    "vuepress-plugin-permalink-pinyin": "^1.0.0",
     "vuepress-plugin-reading-progress": "^1.0.10",
     "vuepress-theme-reco": "1.6.10"
   },

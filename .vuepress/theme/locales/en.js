@@ -5,5 +5,6 @@ export default {
   category: 'Categories',
   friendLink: 'Friend Links',
   timeLine: 'TimeLine',
-  timeLineMsg: 'Yesterday Once More!'
+  timeLineMsg: 'Yesterday Once More!',
+  about: 'About'
 }

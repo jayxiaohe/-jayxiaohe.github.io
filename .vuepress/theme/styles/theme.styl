@@ -15,6 +15,8 @@ body
   font-size 15px
   color var(--text-color)
   background-color var(--background-color)
+  //addbyhpt。暗黑模式的背景颜色配置
+  background-image var(--background-image) !important
 
 .page, .password-wrapper-in
   overflow-x: hidden
@@ -28,6 +30,8 @@ body
   right 0
   height $navbarHeight
   box-sizing border-box
+  //addbyhpt。暗黑模式的背景颜色配置
+  background-image var(--background-image) !important
 
 .sidebar-mask
   position fixed
@@ -39,7 +43,7 @@ body
   display none
   background-color: rgba(0,0,0,.65);
 
-.sidebar
+.sidebar  
   font-size 16px
   background-color var(--background-color)
   width $sidebarWidth
@@ -120,9 +124,10 @@ h1, h2, h3, h4, h5, h6
 
 h1
   font-size 1.6rem
-
+  
 h2
   font-size 1.4rem
+  //font-family: Arial, Helvetica, Cursive
 
 h3
   font-size 1.2rem

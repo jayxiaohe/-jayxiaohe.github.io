@@ -14,15 +14,14 @@
         :alt="$siteTitle">
       <span
         ref="siteName"
+        :style="$themeConfig.fullscreen ?{'color':'#fff'}:{}"
         class="site-name"
         v-if="$siteTitle">{{ $siteTitle }}</span>
     </router-link>
 
     <div
       class="links"
-      :style="linksWrapMaxWidth ? {
-        'max-width': linksWrapMaxWidth + 'px'
-      } : {}">
+      :style="">
 
       <Mode />
       <AlgoliaSearchBox
@@ -122,10 +121,10 @@ $navbar-horizontal-padding = 1.5rem
     right $navbar-horizontal-padding
     top $navbar-vertical-padding
     display flex
-    //background-color var(--background-color)	
+    background-color var(--background-color)
     .search-box
       flex: 0 0 auto
-      vertical-align top      
+      vertical-align top
 
 @media (max-width: $MQMobile)
   .navbar

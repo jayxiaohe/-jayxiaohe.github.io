@@ -59,8 +59,7 @@ export default defineComponent({
 .tags-wrapper
   max-width: $contentWidth
   margin: 0 auto;
-  padding: 4.6rem 2.5rem 0;
-
+  padding: 4.6rem 2.5rem 0; 
 @media (max-width: $MQMobile)
   .tags-wrapper
     padding: 5rem 0.6rem 0;

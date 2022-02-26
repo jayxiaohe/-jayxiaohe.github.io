@@ -120,8 +120,6 @@ export default defineComponent({
 
 <style lang="stylus">
 .home-blog {
-  //addbyhpt...背影图片适配调色盘！
-  background-image var(--background-image) !important
   padding: 0;
   margin: 0px auto;
   .hero {
@@ -150,7 +148,7 @@ export default defineComponent({
       line-height: 1.3;
     }
   }
-  .home-blog-wrapper {	
+  .home-blog-wrapper {
     display flex
     align-items: flex-start;
     margin 20px auto 0
@@ -178,7 +176,7 @@ export default defineComponent({
       border-radius $borderRadius
       box-sizing border-box
       padding 0 15px
-      background var(--background-color)	  
+      background var(--background-color)
       &:hover {
         box-shadow var(--box-shadow-hover)
       }
@@ -194,7 +192,7 @@ export default defineComponent({
           transition: all .5s
           border-radius $borderRadius
           box-shadow var(--box-shadow)
-          background-color var(--background-color)		  
+          background-color var(--background-color)
           &:hover {
             transform scale(1.04)
             a {

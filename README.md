@@ -1,10 +1,10 @@
 ---
 home: true
-heroText: 何鹏涛的博客
-tagline: 万物之中，希望至美。
-# bgImage: '/bg.jpg'
+heroText: 万物之中，希望至美
+tagline: 至美之物，永不凋零 🌱
+// bgImage: '/bg2.png'
 bgImageStyle: {
-  height: '850px'
+  height: '400px'
 }
 isShowTitleInHome: false
 actionText: Guide

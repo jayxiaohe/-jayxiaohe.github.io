@@ -1,5 +1,5 @@
 module.exports = {
-  "title": "Hpt's Blog",
+  "title": "HePengTao's Blog",
   "description": "万物之中，希望至美。",
   "dest": "public",
   //"base": "/blog",
@@ -19,6 +19,11 @@ module.exports = {
       }
     ]
   ],
+  "locales": {
+    "/": {
+      lang: 'zh-CN'
+    }
+  },
   "theme": "reco",
   "themeConfig": {
 	// hpt add start...
@@ -105,28 +110,28 @@ module.exports = {
         "avatar": "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
         "link": "https://vuepress-theme-reco.recoluan.com"
       }
-    ],**/
-    //"logo": "/logo.png",
-	"logo": "/wxAvatar.jpg",
+    ],**/    
+	//"logo": "/wxAvatar.jpg",
+	"logo": "/favicon1.ico",	
     "search": true,
     "searchMaxSuggestions": 10,
     "lastUpdated": "上次更新",
-    "author": "何鹏涛",
+    "author": "HePengTao",
     "authorAvatar": "/wxAvatar.jpg",
     "startYear": "2018",
 	//hpt add...start.
 	"nextLinks": true,
 	"prevLinks": true,
 	// 评论。切换评论插件
-	/**vssueConfig: {
-	  showComment: true,
+	vssueConfig: {
+	  showComment: false,
 	  locale: 'zh',
       platform: 'github',
       owner: 'jayxiaohe',
       repo: 'blog_comments',
       clientId: 'd987083397f3017cd1c0',
       clientSecret: '5668ff799fca28547abe3d26115fd19a683d90cd'	  
-    },*/
+    }
   },
   "markdown": {
     "lineNumbers": true
@@ -161,6 +166,7 @@ module.exports = {
 		  volume: 0.1,
 		  // 关闭歌词显示。可选值： 3 | 1 | 0（0：禁用 lrc 歌词，1：lrc 格式的字符串，3：lrc 文件 url）
 		  lrcType: 0,//0,
+		  preload: metadata
 		},
 		mobile: {
 		  // 手机端去掉cover图
@@ -179,6 +185,10 @@ module.exports = {
 	["flexsearch-pro"], // 全文搜索
 	// 参考：https://lq782655835.github.io/vuepress-plugin-element-ui/
 	// element-ui插件失败问题：https://blog.csdn.net/qq_32855007/article/details/108726430
-	["vuepress-plugin-element-ui"] // element-ui插件
+	["vuepress-plugin-element-ui"], // element-ui插件
+    ["permalink-pinyin", {
+      lowercase: true, // Converted into lowercase, default: true
+      separator: '-' // Separator of the slug, default: '-'
+    }]
   ]
 }

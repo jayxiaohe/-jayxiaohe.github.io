@@ -1,6 +1,5 @@
 <template>
-  <!-- addbyhpt. 这里加入判断。留言板（hidenInfo=true）不显示作者。标签信息 -->
-  <div v-if="!pageInfo.frontmatter.hidenInfo">
+  <div>
     <reco-icon
       v-if="pageInfo.frontmatter.author || $themeConfig.author"
       icon="reco-account"

@@ -39,6 +39,7 @@ export default defineComponent({
 
 <style lang="stylus" scoped>
 .tags
+  background-image var(--background-image) !important
   margin 30px 0
   span
     vertical-align: middle;

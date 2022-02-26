@@ -2,6 +2,7 @@
 title: '关于'
 date: 2019-01-25 19:09:48
 publish: false
+hidenInfo: true
 ---
 ::: tip
 欢迎光临，很高兴遇见你！🤝

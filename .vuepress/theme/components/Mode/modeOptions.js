@@ -18,6 +18,8 @@ const modeOptions = {
     '--border-color': '#eaecef',
     '--code-color': 'rgba(27, 31, 35, 0.05)',
     '--mask-color': '#888'
+	// addbyhpt。
+	,'--background-image': 'url("/back.jpg")'
   },
   dark: {
     '--default-color-10': 'rgba(0, 0, 0, 1)',
@@ -38,6 +40,8 @@ const modeOptions = {
     '--border-color': 'rgba(0, 0, 0, .3)',
     '--code-color': 'rgba(0, 0, 0, .3)',
     '--mask-color': '#000'
+	// addbyhpt。暗色的背景图片。适配调色盘
+	,'--background-image': 'url("/back-dark1.jpg")'
   }
 }
 

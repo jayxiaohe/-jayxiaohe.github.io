@@ -2,7 +2,8 @@
   <main class="page" :style="pageStyle">
     <ModuleTransition delay="0.08">
       <section v-show="recoShowModule">
-        <div class="page-title">
+	    <!-- addbyhpt. 这里加入判断。留言板（hidenInfo=true）不显示标题 -->
+        <div class="page-title" v-if="!hidenInfos">
           <h1 class="title">{{$page.title}}</h1>
           <PageInfo :pageInfo="$page" :showAccessNumber="showAccessNumber"></PageInfo>
         </div>
@@ -12,7 +13,9 @@
     </ModuleTransition>
 
     <ModuleTransition delay="0.16">
-      <footer v-if="recoShowModule" class="page-edit">
+      <!--<footer v-if="recoShowModule" class="page-edit">-->
+	  <!-- addbyhpt. 这里加入判断。留言板（hidenInfo=true）不显示上次更新时间，上下篇 -->
+	  <footer v-if="recoShowModule && !hidenInfos" class="page-edit">
         <div class="edit-link" v-if="editLink">
           <a
             :href="editLink"
@@ -78,15 +81,22 @@ export default defineComponent({
     const { sidebarItems } = toRefs(props)
 
     const recoShowModule = computed(() => instance.$parent.recoShowModule)
+	
+	// addbyhpt。是否隐藏标题。
+	const hidenInfos = computed(() => {
+	  const { hidenInfo } = instance.$frontmatter
+	  return (hidenInfo === true)
+	})
 
     // 是否显示评论
     const shouldShowComments = computed(() => {
       const { isShowComments } = instance.$frontmatter
-      const { showComment } = instance.$themeConfig.valineConfig || { showComment: true }
+      //const { showComment } = instance.$themeConfig.valineConfig || { showComment: true }
+	  const { showComment } = instance.$themeConfig.vssueConfig || { showComment: true }	  
       return (showComment !== false && isShowComments !== false) || (showComment === false && isShowComments === true)
     })
-
-    const showAccessNumber = computed(() => {
+	
+	const showAccessNumber = computed(() => {
       const {
         $themeConfig: { valineConfig },
         $themeLocaleConfig: { valineConfig: valineLocalConfig }
@@ -96,6 +106,17 @@ export default defineComponent({
 
       return vc && vc.visitor != false
     })
+
+    /**const showAccessNumber = computed(() => {
+      const {
+        $themeConfig: { valineConfig },
+        $themeLocaleConfig: { valineConfig: valineLocalConfig }
+      } = instance || {}
+
+      const vc = valineLocalConfig || valineConfig
+
+      return vc && vc.visitor != false
+    })*/
 
     const lastUpdated = computed(() => {
       if (instance.$themeConfig.lastUpdated === false) return false
@@ -173,6 +194,8 @@ export default defineComponent({
       editLink,
       editLinkText,
       pageStyle
+	  // addbyhpt。是否隐藏标题。
+	  ,hidenInfos
     }
   }
 })
@@ -241,6 +264,8 @@ function flatten (items, res) {
 @require '../styles/wrapper.styl'
 
 .page
+  //addbyhpt...背影图片适配调色盘！
+  background-image var(--background-image) !important
   position relative
   padding-top 5rem
   padding-bottom 2rem
