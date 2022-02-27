@@ -1,3 +1,7 @@
+ <!-- addbyhpt.分享到微信时显示图标。--尝试中。 -->
+  <div style="margin:0 auto;display:none;">
+      <img src='/favicon1.ico' />  
+  </div>
 <template>
   <header class="navbar" 
   style="

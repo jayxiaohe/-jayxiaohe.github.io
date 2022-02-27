@@ -8,10 +8,32 @@ module.exports = {
       "link",
       {
         "rel": "icon",
-        "href": "/favicon.ico"
+        "href": "/favicon1.ico",
+		"type": "image/x-ico"
       }
     ],
     [
+      "meta",
+      {
+        "name": "baidu-site-verification",
+        "content": "code-SsWv2iVILz"
+      }
+    ],
+	[
+      "meta",
+      {
+        "name": "keywords",
+        "content": "何鹏涛,vuepress,leetcode,力扣,算法"
+      }
+    ],
+	[
+      "meta",
+      {
+        "name": "description",
+        "content": "何鹏涛的博客。主要内容为力扣算法记录，java-web知识点。"
+      }
+    ],
+	[
       "meta",
       {
         "name": "viewport",
@@ -147,7 +169,10 @@ module.exports = {
 		  server: "netease",
 		  // 读取歌单列表
 		  type: "playlist",
-		  mid: "782656363",
+		  mid: "7311154894",
+		  // 自动播放
+		  autoplay: true,
+		  preload: 'auto'
 		},
 		// 不配置该项的话不会出现全局播放器
 		aplayer: {
@@ -161,12 +186,12 @@ module.exports = {
 		  // 颜色
 		  theme: "#3eaf7c",//"#f9bcdd",
 		  // 播放顺序为随机
-		  order: "list", //"random"
+		  order: "random", //"list"
 		  // 初始音量
-		  volume: 0.1,
+		  volume: 0.2,
 		  // 关闭歌词显示。可选值： 3 | 1 | 0（0：禁用 lrc 歌词，1：lrc 格式的字符串，3：lrc 文件 url）
 		  lrcType: 0,//0,
-		  // 暂时注释preload: 'metadata'
+		  preload: 'auto'
 		},
 		mobile: {
 		  // 手机端去掉cover图
