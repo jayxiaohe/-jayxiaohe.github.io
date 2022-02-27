@@ -249,6 +249,6 @@ module.exports = {
       lowercase: true, // Converted into lowercase, default: true
       separator: '-' // Separator of the slug, default: '-'
     }]
-	,["sitemap", {hostname: "https://i.iyes.life"}]
+	//,["sitemap", {hostname: "https://i.iyes.life"}]
   ]
 }
