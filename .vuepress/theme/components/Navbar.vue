@@ -30,10 +30,10 @@
       <SearchBox v-else-if="$themeConfig.search !== false && $frontmatter.search !== false"/>
       <NavLinks class="can-hide"/>
     </div>
-	<!-- addbyhpt.分享到微信时显示图标。--尝试中。 -->
-	  <div style="opacity:0.0;">
-		  <img src='/logo_320.png' />  
-	  </div>
+	<!-- addbyhpt.分享到微信时显示图标。但不能挡住后方元素的位置 -->
+	<div style="position:absolute;left:-2000px;opacity:0.0; z-index:-1;">
+        <img src='/logo_320.png' /> 
+	</div>-->	 	  
   </header>
 </template>
 
