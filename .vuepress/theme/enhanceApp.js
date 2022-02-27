@@ -29,4 +29,3 @@ export default ({
   // 引入element-ui-步骤2
   Vue.use(Element)
 }
-import '../public/fontawesome/css/all.css';
