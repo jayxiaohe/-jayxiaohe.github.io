@@ -2,6 +2,7 @@
 home: true
 heroText: 万物之中，希望至美
 tagline: 至美之物，永不凋零 🌱
+taglineen: Hope is the best of things, and no good thing ever die
 // bgImage: '/bg2.png'
 bgImageStyle: {
   height: '400px'

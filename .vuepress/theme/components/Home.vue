@@ -18,7 +18,7 @@
       </ModuleTransition>
       <ModuleTransition delay="0.08">
         <p v-if="recoShowModule && $frontmatter.tagline !== null" class="description">
-          {{ $frontmatter.tagline || $description || 'Welcome to your vuePress-theme-reco site' }}
+          {{ $frontmatter.tagline || $description }}123
         </p>
       </ModuleTransition>
       <ModuleTransition delay="0.16">
