@@ -126,7 +126,7 @@ module.exports = {
 	vssueConfig: {
 	  showComment: false,
 	  locale: 'zh',
-      platform: 'github',
+      platform: 'github-v4',
       owner: 'jayxiaohe',
       repo: 'blog_comments',      
 	  clientId: '9663b810da543d1a1dc1',
