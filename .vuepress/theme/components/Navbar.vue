@@ -1,13 +1,8 @@
- <!-- addbyhpt.分享到微信时显示图标。--尝试中。 -->
-  <div style="margin:0 auto;display:none;">
-      <img src='/favicon1.ico' />  
-  </div>
 <template>
   <header class="navbar" 
   style="
         'background-color': 'rgba(11,156,49,1)'">
     <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')"/>
-
     <router-link
       :to="$localePath"
       class="home-link">
@@ -35,6 +30,10 @@
       <SearchBox v-else-if="$themeConfig.search !== false && $frontmatter.search !== false"/>
       <NavLinks class="can-hide"/>
     </div>
+	<!-- addbyhpt.分享到微信时显示图标。--尝试中。 -->
+	  <div style="opacity:0.0;">
+		  <img src='/logo_320.png' />  
+	  </div>
   </header>
 </template>
 
