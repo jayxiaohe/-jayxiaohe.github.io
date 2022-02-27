@@ -112,8 +112,12 @@ module.exports = {
             "link": "https://leetcode-cn.com/problemset/all"
           },
           {
-            "text": "🎉Font Awesome",
-            "link": "https://fontawesome.com/icons?d=gallery&m=free"
+            "text": "🦚语雀",
+            "link": "https://www.yuque.com/dashboard"
+          },
+		  {
+            "text": "📺B站",
+            "link": "https://www.bilibili.com/"
           }
         ]
       },
