@@ -58,7 +58,7 @@ module.exports = {
       },*/
 	  {
         "text": "留言",
-		"link": "/m/messageBoard",
+		"link": "/m/messageboard",
         "icon": "reco-suggestion"
       },
 	  {
@@ -126,16 +126,11 @@ module.exports = {
 	vssueConfig: {
 	  showComment: false,
 	  locale: 'zh',
-      /**platform: 'github',
+      platform: 'github',
       owner: 'jayxiaohe',
       repo: 'blog_comments',      
 	  clientId: '9663b810da543d1a1dc1',
-	  clientSecret: '22d747bf02709b75bfdcc0a31faa37f87ce67548'*/
-	  platform: 'gitee',
-      owner: 'hept',
-      repo: 'blog_comments',      
-	  clientId: '850b057dd4fe075874b55e343cc8365aeed9c7081da0bb030c828a6c5adcb968',
-	  clientSecret: '87669912040b3768aa065ef5c244175967111991cef24849cac61e75a7f86ecb'
+	  clientSecret: '22d747bf02709b75bfdcc0a31faa37f87ce67548'
     }
   },
   "markdown": {

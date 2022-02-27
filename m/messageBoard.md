@@ -1,6 +1,6 @@
 ---
 title: '留言板'
-isShowComments: false
+isShowComments: true
 publish: false
 subSidebar: false
 hidenInfo: true
