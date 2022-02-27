@@ -8,6 +8,8 @@ import { install } from 'vue-demi'
 import Element from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 
+//字体 import '../public/fontawesome/css/fontawesome.min.css';
+
 export default ({
   Vue,
   siteData,
@@ -27,3 +29,4 @@ export default ({
   // 引入element-ui-步骤2
   Vue.use(Element)
 }
+import '../public/fontawesome/css/all.css';

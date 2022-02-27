@@ -1,5 +1,5 @@
 module.exports = {
-  "title": "HePengTao's Blog",
+  "title": "HePengTao Blog",
   "description": "万物之中，希望至美。",
   "dest": "public",
   //"base": "/blog",
@@ -12,13 +12,29 @@ module.exports = {
 		"type": "image/x-ico"
       }
     ],
+	/** addbyhpt.加入icon
+	[
+      "link",
+      {
+        "rel": "stylesheet",
+        "href": "/fontawesome/css/fontawesome.css"
+      }
+    ],
+	[
+      "link",
+      {
+        "rel": "stylesheet",
+        "href": "/fontawesome/css/all.css"
+      }
+    ],*/
+	//百度seo
     [
       "meta",
       {
         "name": "baidu-site-verification",
         "content": "code-SsWv2iVILz"
       }
-    ],
+    ],	
 	[
       "meta",
       {
@@ -82,6 +98,24 @@ module.exports = {
         "text": "留言",
 		"link": "/m/messageboard",
         "icon": "reco-suggestion"
+      },	  
+	  {
+        "text": "工具",		
+        "icon": "reco-other",
+		"items": [
+		  {
+            "text": "⌨️GitHub",
+            "link": "https://github.com"
+          },
+		  {
+            "text": "👨‍💻力扣",
+            "link": "https://leetcode-cn.com/problemset/all"
+          },
+          {
+            "text": "Font Awesome",
+            "link": "https://fontawesome.com/icons?d=gallery&m=free"
+          }
+        ]
       },
 	  {
         "text": "关于",
@@ -215,5 +249,6 @@ module.exports = {
       lowercase: true, // Converted into lowercase, default: true
       separator: '-' // Separator of the slug, default: '-'
     }]
+	,["sitemap", {hostname: "https://i.iyes.life"}]
   ]
 }

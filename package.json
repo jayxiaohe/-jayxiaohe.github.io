@@ -22,8 +22,10 @@
   },
   "description": "即将打开...",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.3.0",
     "async-validator": "1.11.5",
     "element-ui": "^2.15.6",
-    "vuepress-plugin-comment": "^0.7.3"
+    "vuepress-plugin-comment": "^0.7.3",
+    "vuepress-plugin-sitemap": "^2.3.1"
   }
 }
