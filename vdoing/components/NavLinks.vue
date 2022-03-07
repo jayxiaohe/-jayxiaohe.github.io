@@ -20,16 +20,8 @@
     </div>
 
     <!-- repo link -->
-    <a
-      v-if="repoLink"
-      :href="repoLink"
-      class="repo-link"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      {{ repoLabel }}
-      <OutboundLink />
-    </a>
+	<!-- addbyhpt.删除导航栏右上角的repo链接。但保留每个文档的编辑链接。注释下面的a标签 -->
+    <!-- <a v-if="repoLink" :href="repoLink" class="repo-link" target="_blank" rel="noopener noreferrer"> {{ repoLabel }}<OutboundLink /></a> -->
   </nav>
 </template>
 
@@ -87,12 +79,13 @@ export default {
     },
 
     repoLink () {
-      const { repo } = this.$site.themeConfig
-      if (repo) {
-        return /^https?:/.test(repo)
-          ? repo
-          : `https://github.com/${repo}`
-      }
+	  // addbyhpt. 删除导航栏右上角的repo链接。但保留每个文档的编辑链接。注释下面的a标签
+      // const { repo } = this.$site.themeConfig
+      // if (repo) {
+      //   return /^https?:/.test(repo)
+      //     ? repo
+      //     : `https://github.com/${repo}`
+      // }
       return null
     },
 
