@@ -9,8 +9,8 @@ import baiduCode from './config/baiduCode' // 百度统计hm码
 import htmlModules from './config/htmlModules' // 自定义插入的html块
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
-  theme: 'vdoing', // 使用npm包主题
-  // theme: resolve(__dirname, '../../vdoing'), // 使用本地主题
+  //theme: 'vdoing', // 使用npm包主题
+   theme: resolve(__dirname, '../../vdoing'), // 使用本地主题
 
   locales: {
     '/': {
@@ -201,7 +201,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 	repo: 'jayxiaohe/jayxiaohe.github.io',
     docsDir: 'docs', // 编辑的文件夹
     editLinks: true, // 启用编辑
-    editLinkText: '编辑',
+    editLinkText: '在线编辑',
 
     //*** 以下是Vdoing主题相关配置，文档：https://doc.xugaoyi.com/pages/a20ce8/ ***//
 
@@ -317,6 +317,17 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
   // 插件配置
   plugins: {
+	//addbyhpt. 参考：https://notes.youngkbt.cn/about/website/code-block-hidden/#%E6%B7%BB%E5%8A%A0vue%E7%BB%84%E4%BB%B6
+	
+	//'custom-plugins': {
+    //  'globalUIComponents': ['BlockToggle', 'GlobalTip'] // 2.x 版本 globalUIComponents 改名为 clientAppRootComponentFiles
+    //},
+	//{name: 'custom-plugins',
+	//  globalUIComponents: ['BlockToggle', 'GlobalTip'] // 2.x 版本 globalUIComponents 改名为 clientAppRootComponentFiles
+	//}},
+	[resolve(__dirname, './components/BlockToggle')]: {},
+	
+	
     // 导入本地插件（供学习参考）
     // [resolve(__dirname, './plugins/love-me')]: { // 鼠标点击爱心特效
     //   color: '#11a8cd', // 爱心颜色，默认随机色
@@ -450,13 +461,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 		  // 手机端去掉cover图
 		  cover: false,
 		},
-	},
-	
-	
-	//addbyhpt. 参考：https://notes.youngkbt.cn/about/website/code-block-hidden/#%E6%B7%BB%E5%8A%A0vue%E7%BB%84%E4%BB%B6
-	'custom-plugins': {
-      globalUIComponents: ["BlockToggle"] // 2.x 版本 globalUIComponents 改名为 clientAppRootComponentFiles
-    },
+	},	
   },
 
   markdown: {
