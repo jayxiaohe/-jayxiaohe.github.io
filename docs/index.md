@@ -1,8 +1,8 @@
 ---
 home: true
 # heroImage: /img/web.png
-heroText: 万物之中，希望最美
-tagline: 最美之物，永不凋零
+heroText: 万物之中，希望至美
+tagline: 至美之物，永不凋零
 # actionText: 立刻进入 →
 # actionLink: /web/
 # bannerBg: auto # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | 

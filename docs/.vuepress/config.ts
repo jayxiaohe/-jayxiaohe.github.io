@@ -7,9 +7,10 @@ import { VdoingThemeConfig } from 'vuepress-theme-vdoing/types'
 import dayjs from 'dayjs'
 import baiduCode from './config/baiduCode' // 百度统计hm码
 import htmlModules from './config/htmlModules' // 自定义插入的html块
+import { costomers } from 'vuepress/config'
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
-  //theme: 'vdoing', // 使用npm包主题
+   //theme: 'vdoing', // 使用npm包主题
    theme: resolve(__dirname, '../../vdoing'), // 使用本地主题
 
   locales: {
@@ -216,7 +217,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     //   'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175846.jpeg'
 	// ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时每隔15秒换一张。
 	bodyBgImg: [
-		'/img/bg.jpeg'
+		'/img/wind.jpg'
     ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时每隔15秒换一张。
     // bodyBgImgOpacity: 0.5, // body背景图透明度，选值 0.1~ 1.0, 默认0.5
 	bodyBgImgOpacity: 0.7, // body背景图透明度，选值 0.1~ 1.0, 默认0.5
@@ -226,7 +227,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     //   '图标地址2'
     // ],
     // contentBgStyle: 1, // 文章内容块的背景风格，默认无. 1 方格 | 2 横线 | 3 竖线 | 4 左斜线 | 5 右斜线 | 6 点状
-	//contentBgStyle: 6, // 文章内容块的背景风格，默认无. 1 方格 | 2 横线 | 3 竖线 | 4 左斜线 | 5 右斜线 | 6 点状
+	contentBgStyle: 6, // 文章内容块的背景风格，默认无. 1 方格 | 2 横线 | 3 竖线 | 4 左斜线 | 5 右斜线 | 6 点状
 
     // updateBar: { // 最近更新栏
     //   showToArticle: false, // 显示到文章页底部，默认true
@@ -264,7 +265,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 		{
           iconClass: 'icon-weixin',
           title: '微信',
-          link: '/about/',
+          link: '/about/#📬-联系我',
         },
         /*{
           iconClass: 'icon-github',
@@ -300,7 +301,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       'meta',
       {
         name: 'keywords',
-        content: '力扣,vuepress,个人技术博客,java,面试题,技术文档,学习,面试,git,github,markdown',
+        content: '力扣,何鹏涛,hepengtao,vuepress,个人技术博客,java,面试题,技术文档,学习,面试,git,github,markdown',
       },
     ],
     ['meta', { name: 'baidu-site-verification', content: 'code-SsWv2iVILz' }], // 百度统计的站长验证（你可以去掉）
@@ -315,17 +316,14 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // ], // 网站关联Google AdSense 与 html格式广告支持（你可以去掉）
   ],
 
+
   // 插件配置
-  plugins: {
+  plugins: [
 	//addbyhpt. 参考：https://notes.youngkbt.cn/about/website/code-block-hidden/#%E6%B7%BB%E5%8A%A0vue%E7%BB%84%E4%BB%B6
-	
-	//'custom-plugins': {
-    //  'globalUIComponents': ['BlockToggle', 'GlobalTip'] // 2.x 版本 globalUIComponents 改名为 clientAppRootComponentFiles
-    //},
-	//{name: 'custom-plugins',
-	//  globalUIComponents: ['BlockToggle', 'GlobalTip'] // 2.x 版本 globalUIComponents 改名为 clientAppRootComponentFiles
-	//}},
-	[resolve(__dirname, './components/BlockToggle')]: {},
+	[{
+		name: 'custom-plugins',
+        globalUIComponents: ["GlobalTip", "BlockToggle"] // 2.x 版本 globalUIComponents 改名为 clientAppRootComponentFiles
+    }],
 	
 	
     // 导入本地插件（供学习参考）
@@ -333,17 +331,17 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     //   color: '#11a8cd', // 爱心颜色，默认随机色
     //   excludeClassName: 'theme-vdoing-content' // 要排除元素的class, 默认空''
     // },
-
+	
     // 百度自动推送
-    'vuepress-plugin-baidu-autopush': {},
+    ['vuepress-plugin-baidu-autopush', {}],
 
     // 百度统计
-    'vuepress-plugin-baidu-tongji': {
+    ['vuepress-plugin-baidu-tongji', {
       hm: baiduCode,
-    },
+    }],
 
     // 全文搜索
-    'fulltext-search': {},
+    ['fulltext-search',{}],
 
     // 可以添加第三方搜索链接的搜索框（继承原官方搜索框的配置参数）
     // 'thirdparty-search': {
@@ -373,12 +371,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // },
 
     // 代码块复制按钮
-    'one-click-copy': {
+    ['one-click-copy', {
       copySelector: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'], // String or Array
       copyMessage: '复制成功', // default is 'Copy successfully and then paste it for use.'
       duration: 1000, // prompt message display time.
       showInMobile: true, // whether to display on the mobile side, default: false.
-    },
+    }],
 
     // DEMO演示模块, API: https://github.com/xiguaxigua/vuepress-plugin-demo-block
     /**'demo-block': {
@@ -393,15 +391,15 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     },*/
 
     // 放大图片
-    'vuepress-plugin-zooming': {
+    ['vuepress-plugin-zooming', {
       selector: '.theme-vdoing-content img:not(.no-zoom)', // not排除class是no-zoom的图片
       options: {
         bgColor: 'rgba(0,0,0,0.6)',
       },
-    },
+    }],
 
     // 评论区
-    'vuepress-plugin-comment': {
+    ['vuepress-plugin-comment', {
       choosen: 'gitalk',
       options: {
         clientID: '9663b810da543d1a1dc1',
@@ -417,17 +415,17 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         body:
           '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
       },
-    },
+    }],
 
     // "上次更新"的时间格式
-    '@vuepress/last-updated': {
+    ['@vuepress/last-updated', {
       transformer: (timestamp, lang) => {
         return dayjs(timestamp).format('YYYY/MM/DD, HH:mm:ss')
       },
-    },
+    }],
 	
 	// 音乐播放器
-	"meting": {
+	["meting", {
 		meting: {
 		  // 网易
 		  server: "netease",
@@ -461,8 +459,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 		  // 手机端去掉cover图
 		  cover: false,
 		},
-	},	
-  },
+	}],
+  ],
 
   markdown: {
     lineNumbers: true
