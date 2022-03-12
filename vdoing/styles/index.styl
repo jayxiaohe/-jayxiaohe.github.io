@@ -9,13 +9,21 @@
 @require './toc'
 @require './markdown-container'
 
+// addbyhpt...start
+@font-face {
+  font-family: "HarmonyOS Sans SC";
+  src: url("/font/HarmonyOS_Sans_SC_Regular.ttf") format("truetype");
+}
+
+// addbyhpt...end
 
 html, body
   padding 0
   margin 0
+  font-family "HarmonyOS Sans SC", "PingFang SC", "Helvetica Neue", "Microsoft YaHei", sans-serif !important;
 
 body
-  font-family -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
+  //font-family -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
   -webkit-tap-highlight-color transparent
