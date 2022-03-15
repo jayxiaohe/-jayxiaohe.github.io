@@ -100,7 +100,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         items: [
           {
             text: 'Spring',
-            link: '/note/spring/',
+            link: '/pages/c8531d/',
           },
           {
             text: 'Spring MVC',
