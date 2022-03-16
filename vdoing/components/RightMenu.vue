@@ -56,9 +56,9 @@ export default {
   top 0
   font-size 0.9rem
   .right-menu-margin
-    margin-top: ($navbarHeight + 1rem)
+    margin-top: ($navbarHeight)// + 1rem)
   .right-menu-content
-    max-height 80vh
+    max-height 85vh
     position relative
     overflow hidden
     &::-webkit-scrollbar-track-piece
@@ -73,7 +73,8 @@ export default {
       &.level3
         padding-left 28px
       &.active
-        border-color $accentColor
+        border-color $accentColor	
+		
         a
           color $accentColor
           opacity 1
@@ -84,6 +85,7 @@ export default {
         width: ($rightMenuWidth - 30px)
         &:hover
           color $accentColor
+
 .have-body-img
   .right-menu-wrapper
     .right-menu-margin

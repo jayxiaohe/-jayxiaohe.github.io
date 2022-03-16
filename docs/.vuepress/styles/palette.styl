@@ -38,7 +38,7 @@ $badgeErrorColor = #DA5961
 
 // 布局
 $navbarHeight = 3.6rem
-$sidebarWidth = 18rem
+$sidebarWidth = 12rem //18rem
 $contentWidth = 860px
 $homePageWidth = 1100px
 $rightMenuWidth = 230px // 右侧菜单
@@ -54,9 +54,9 @@ div[class*="language-"]
       color #9e9e9e
 
 // 加粗字体颜色
-strong
+//strong
   // color 
-  color #00A55A
+  ////color #000000 //#00A55A
 
 .suggestions
   max-height 800 px
@@ -66,13 +66,14 @@ strong
   font-weight bold
 
 .theme-mode-light
-  --bodyBg: #f4f4f4
+  //--bodyBg: #f4f4f4
+  --bodyBg: #fff !important
   --mainBg: rgba(255,255,255,1)
   --sidebarBg: rgba(255,255,255,.8)
   --blurBg: rgba(255,255,255,.9)
+  --textColor: #004050
   --customBlockBg: #fff
-  --textColor: #00323c
-  --textLightenColor: #d63200     // `` 高亮，原来是 #0085AD
+  --textLightenColor: #0085AD
   --borderColor: rgba(0,0,0,.15)
   // 代码块浅色主题
   --codeBg: #282C34
@@ -142,9 +143,9 @@ strong
   --sidebarBg: rgba(40,40,56,.8)
   --blurBg: rgba(40,40,56,.9)
   --customBlockBg: rgba(25,25,49,0.53)
-  --textColor: #acb7c4
-  --textLightenColor: #b160ea   // `` 包裹的文字颜色
-  --borderColor: #1d1d26
+  --textColor: rgb(140,140,150)
+  --textLightenColor: #0085AD
+  --borderColor: #2C2C3A
   --codeBg: #1d1d26
   --codeColor: #A9B7C6
   codeThemeDark()
@@ -207,6 +208,7 @@ strong
   a.sidebar-link.active     // 侧边栏当前标题
     color #b160ea
     border-left-color #b160ea
+	background $b160ea
 
   .post-list .post .title-wrapper a:hover,   // 首页文章列表悬停
   .blogger-wrapper .icons a:hover,     // 首页头像下的图标悬停
@@ -244,16 +246,15 @@ strong
   // vuepress-plugin-tabs 插件的标题选中颜色
   .tabs-component-tab.is-active       
     color #b160ea
-
+  
 // 阅读模式
 .theme-mode-read
-  --bodyBg: rgb(236,236,204)
+  --bodyBg: rgba(245,245,213,1)
   --mainBg: rgba(245,245,213,1)
   --sidebarBg: rgba(245,245,213,.8)
   --blurBg: rgba(245,245,213,.9)
-  --customBlockBg: rgb(236,236,204)
-  --textColor: #704214
-  --textLightenColor: #996633
+  --textColor: #004050
+  --textLightenColor: #0085AD
   --borderColor: rgba(0,0,0,.15)
   --codeBg: #282c34
   --codeColor: #fff

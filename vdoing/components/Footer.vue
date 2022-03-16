@@ -27,7 +27,7 @@ export default {
       return this.$themeConfig.social
     },
     footer() {
-	  	var span = document.createElement("span");
+	  	/*var span = document.createElement("span");
 		// 这几个字母和符号宽度比较容易变化
 		span.innerHTML = "gW@i#Q!T";
 		// 设置为不可见，但可以测量宽度
@@ -53,7 +53,7 @@ export default {
 				document.body.removeChild(span);
 				span = null;
 			}
-		}, 50);
+		}, 50);*/
 	  //this.loadFont
 	  return this.$themeConfig.footer
 	}
