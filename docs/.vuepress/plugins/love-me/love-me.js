@@ -24,6 +24,10 @@ export default () => {
             }
         }
         function o(e) {
+			
+			var colorAngle = Math.floor(Math.random()*360);
+			var color = 'hsla('+ colorAngle +',100%,50%,1)';
+			
             var a = t.createElement("div");
             a.className = "heart",
             s.push({
@@ -32,7 +36,7 @@ export default () => {
                 y: e.clientY - 5,
                 scale: 1,
                 alpha: 1,
-                color: COLOR
+                color: color
             }),
             t.body.appendChild(a)
         }

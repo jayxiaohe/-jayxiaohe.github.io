@@ -10,7 +10,7 @@ import htmlModules from './config/htmlModules' // 自定义插入的html块
 import { costomers } from 'vuepress/config'
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
-  //////theme: 'vdoing', // 使用npm包主题
+  //theme: 'vdoing', // 使用npm包主题
   theme: resolve(__dirname, '../../vdoing'), // 使用本地主题
 
   locales: {
@@ -265,7 +265,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         {
           iconClass: 'icon-weixin',
           title: '微信',
-          link: '/about/#📬-联系我',
+          link: '/about/',
         },
         /*{
           iconClass: 'icon-github',
@@ -340,6 +340,10 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     //   color: '#11a8cd', // 爱心颜色，默认随机色
     //   excludeClassName: 'theme-vdoing-content' // 要排除元素的class, 默认空''
     // },
+	[resolve(__dirname, './plugins/love-me'), { // 鼠标点击爱心特效
+       //color: '#11a8cd', // 爱心颜色，默认随机色
+       excludeClassName: 'theme-vdoing-content' // 要排除元素的class, 默认空''
+    }],
 
     // 百度自动推送
     ['vuepress-plugin-baidu-autopush', {}],

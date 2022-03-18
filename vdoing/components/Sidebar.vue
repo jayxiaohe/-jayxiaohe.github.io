@@ -1,8 +1,8 @@
 <template>
   <aside class="sidebar">
     <div class="blogger" v-if="blogger">
-      <img :src="blogger.avatar" />
-      <div class="blogger-info">
+      <img :src="blogger.avatar" />	  
+      <!--<div class="blogger-info">
         <h3>{{ blogger.name }}</h3>
 
         <div class="icons" v-if="blogger.social">
@@ -16,7 +16,7 @@
           ></a>
         </div>
         <span v-else>{{ blogger.slogan }}</span>
-      </div>
+      </div>-->
     </div>
 
     <!-- 移动端Nav -->

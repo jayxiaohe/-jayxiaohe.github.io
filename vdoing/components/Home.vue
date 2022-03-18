@@ -337,6 +337,8 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+#main-title,.description
+   font-family "HarmonyOS Sans SC", "Hiragino Sans GB" !important
 .home-wrapper
   .banner
     width 100%
@@ -347,13 +349,13 @@ export default {
     overflow hidden
     .banner-conent
       max-width $homePageWidth
-      margin 0px auto
+      margin 70px auto 250px
       position relative
       z-index 1
       overflow hidden
       .hero
         text-align center
-        margin-top 3rem
+        margin-top 7rem
         img
           max-width 100%
           max-height 240px
@@ -361,12 +363,12 @@ export default {
           margin 2rem auto 1.5rem
         h1
           margin 0
-          font-size 3.2rem
+          font-size 2.5rem
         .description, .action
-          margin 1.5rem auto
+          margin 1.8rem auto
         .description
           max-width 40rem
-          font-size 1.1rem
+          font-size 1.4rem
           line-height 1.3
           opacity 0.9
         .action-button
@@ -497,7 +499,7 @@ export default {
           h1
             font-size 2.5rem
           .description
-            font-size 1rem
+            font-size 1.5rem
         .feature
           a
             h2
