@@ -102,7 +102,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             text: 'Spring系列',
             items: [
               { text: 'Spring', link: '/pages/c8531d/' },
-              { text: 'Spring MVC', link: '/note/springmvc/' },
+              { text: 'Spring MVC', link: '/pages/c8531e/' },
               { text: 'Spring Security', link: '/note/springsecurity/' },
               { text: 'Spring Boot', link: '/note/bot/' },
               { text: 'Spring Cloud', link: '/note/cloud/' },
@@ -151,7 +151,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
               { text: 'javaguide', link: 'https://javaguide.cn/' },
               { text: '美团技术', link: 'https://tech.meituan.com/' },
               { text: '淘系技术', link: 'https://tech.taobao.org/news' },
-              { text: '小米技术', link: ' https://xiaomi-info.github.io/tags/' },
+              { text: '小米技术', link: 'https://xiaomi-info.github.io/tags/' },
               { text: 'thoughtworks', link: 'https://insights.thoughtworks.cn/' },
               { text: '微信读书', link: 'https://weread.qq.com/' },
               { text: '百度站长', link: 'https://ziyuan.baidu.com/site/' },
