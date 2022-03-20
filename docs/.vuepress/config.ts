@@ -99,50 +99,29 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         link: '/framework/',
         items: [
           {
-            text: 'Spring',
-            link: '/pages/c8531d/',
+            text: 'Spring系列',
+            items: [
+              { text: 'Spring', link: '/pages/c8531d/' },
+              { text: 'Spring MVC', link: '/note/springmvc/' },
+              { text: 'Spring Security', link: '/note/springsecurity/' },
+              { text: 'Spring Boot', link: '/note/bot/' },
+              { text: 'Spring Cloud', link: '/note/cloud/' },
+            ],
           },
           {
-            text: 'Spring MVC',
-            link: '/note/springmvc/',
+            text: '分布式',
+            items: [
+              { text: 'zookeeper', link: '/note/zk/' },
+              { text: 'Dubbo', link: '/note/dubbo/' },
+              { text: 'netty', link: '/note/netty/' },
+              { text: 'Redis',  link: '/note/redis/' },
+            ],
           },
           {
-            text: 'Spring Security',
-            link: '/note/springsecurity/',
-          },
-          {
-            text: 'Spring Boot',
-            link: '/note/bot/',
-          },
-          {
-            text: 'Spring Cloud',
-            link: '/note/cloud/',
-          },
-          {
-            text: 'Shiro',
-            link: '/note/shiro/',
-          },
-        ],
-      },
-      {
-        text: '中间件',
-        link: '/mid/',
-        items: [
-          {
-            text: 'zookeeper',
-            link: '/note/zk/',
-          },
-          {
-            text: 'Dubbo',
-            link: '/note/dubbo/',
-          },
-          {
-            text: 'netty',
-            link: '/note/netty/',
-          },
-          {
-            text: 'Redis',
-            link: '/note/redis/',
+            text: '其他',
+            items: [
+              { text: 'Shiro', link: '/note/shiro/' },
+            ],
           },
         ],
       },
@@ -165,8 +144,26 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         text: '收藏夹',
         link: '/favo/',
         items: [
-          { text: '网站', link: '/note/javascript/' },
-          { text: '资源', link: '/note/js/' },
+          {
+            text: '常用',
+            items: [
+              { text: 'Leetcode', link: 'https://leetcode-cn.com/problemset/all/' },
+              { text: 'javaguide', link: 'https://javaguide.cn/' },
+              { text: '美团技术', link: 'https://tech.meituan.com/' },
+              { text: '淘系技术', link: 'https://tech.taobao.org/news' },
+              { text: '小米技术', link: ' https://xiaomi-info.github.io/tags/' },
+              { text: 'thoughtworks', link: 'https://insights.thoughtworks.cn/' },
+              { text: '微信读书', link: 'https://weread.qq.com/' },
+              { text: '百度站长', link: 'https://ziyuan.baidu.com/site/' },
+            ],
+          },
+          {
+            text: '其他',
+            items: [
+              { text: '网站', link: '/note/javascript/' },
+              { text: '资源', link: '/note/js/' },
+            ],
+          },
         ],
       },
       {
