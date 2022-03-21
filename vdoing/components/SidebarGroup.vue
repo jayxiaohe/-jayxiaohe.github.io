@@ -83,8 +83,7 @@ export default {
     padding-left 0
     & > .sidebar-heading
       font-size 1.01em
-      line-height 1.4
-      font-weight bold
+      line-height 1.4      
       padding-left 2rem
       &:not(.clickable)
         // opacity 0.9
@@ -101,7 +100,7 @@ export default {
   transition color 0.15s ease
   cursor pointer
   font-size 1.1em
-  font-weight bold
+  //font-weight bold
   // text-transform uppercase
   padding 0.35rem 1.5rem 0.35rem 1.25rem
   width 100%

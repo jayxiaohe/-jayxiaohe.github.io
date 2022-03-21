@@ -53,6 +53,10 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             text: '多线程',
             link: '/pages/3d1a62/',
           },
+		  {
+            text: '设计模式',
+            link: '/pages/3d1a63/',
+          },
           {
             text: 'JVM',
             link: '/pages/6b4196/',

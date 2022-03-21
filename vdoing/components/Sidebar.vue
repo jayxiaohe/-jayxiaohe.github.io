@@ -61,7 +61,7 @@ export default {
     border-bottom 1px solid var(--borderColor)
     padding 0.5rem 0 0.75rem 0
     a
-      font-weight 600
+      //font-weight 600
     .nav-item, .repo-link
       display block
       line-height 1.25rem
@@ -72,7 +72,6 @@ export default {
     & > li > a.sidebar-link
       font-size 1.1em
       line-height 1.7
-      font-weight bold
     & > li:not(:first-child)
       margin-top 0.75rem
   .blogger

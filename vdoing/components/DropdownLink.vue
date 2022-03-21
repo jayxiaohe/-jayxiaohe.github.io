@@ -115,7 +115,7 @@ export default {
     line-height 1.4rem
     background transparent
     border none
-    font-weight 500
+    //font-weight 500
     color var(--textColor)
     &:hover
       border-color transparent
@@ -141,7 +141,7 @@ export default {
         line-height 1.7rem
         position relative
         border-bottom none
-        font-weight 400
+        //font-weight 400
         margin-bottom 0
         padding 0 1.5rem 0 1.25rem
         &:hover
@@ -167,7 +167,7 @@ export default {
     &.open .dropdown-title
       margin-bottom 0.5rem
     .dropdown-title
-      font-weight 600
+      //font-weight 600
       font-size inherit
       &:hover
         color $accentColor
