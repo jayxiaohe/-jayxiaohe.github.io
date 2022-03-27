@@ -51,7 +51,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           },
           {
             text: '多线程',
-            link: '/pages/thread-ref/',
+            link: '/pages/thread01/',
           },
 		  {
             text: '设计模式',
