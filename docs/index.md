@@ -1,6 +1,6 @@
 ---
 home: true
-# heroImage: /img/web.png
+heroImage: /img/logo_max.png
 heroText: 万物之中，希望至美
 tagline: 至美之物，永不凋零
 # actionText: 立刻进入 →

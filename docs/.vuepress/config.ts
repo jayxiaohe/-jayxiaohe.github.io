@@ -43,27 +43,27 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           {
             text: 'Java基础',
             //link: '/note/basic/',
-            link: '/pages/fee187/',
+            link: '/pages/java01/',
           },
           {
             text: 'Java容器',
-            link: '/pages/4df59f/',
+            link: '/pages/rongqi01/',
           },
           {
             text: '多线程',
-            link: '/pages/3d1a62/',
+            link: '/pages/thread-ref/',
           },
 		  {
             text: '设计模式',
-            link: '/pages/3d1a63/',
+            link: '/pages/pattern01/',
           },
           {
             text: 'JVM',
-            link: '/pages/6b4196/',
+            link: '/pages/jvm01/',
           },
           {
             text: 'Java8',
-            link: '/pages/b5e846/',
+            link: '/pages/java801/',
           },
           {
             text: 'Git',
@@ -105,8 +105,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           {
             text: 'Spring系列',
             items: [
-              { text: 'Spring', link: '/pages/c8531d/' },
-              { text: 'Spring MVC', link: '/pages/c8531e/' },
+              { text: 'Spring', link: '/pages/spring01/' },
+              { text: 'Spring MVC', link: '/pages/mvc01/' },
               { text: 'Spring Security', link: '/note/springsecurity/' },
               { text: 'Spring Boot', link: '/note/bot/' },
               { text: 'Spring Cloud', link: '/note/cloud/' },
@@ -229,6 +229,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     //   '图标地址2'
     // ],
     // contentBgStyle: 1, // 文章内容块的背景风格，默认无. 1 方格 | 2 横线 | 3 竖线 | 4 左斜线 | 5 右斜线 | 6 点状
+	//contentBgStyle: 6, // 文章内容块的背景风格，默认无. 1 方格 | 2 横线 | 3 竖线 | 4 左斜线 | 5 右斜线 | 6 点状
 
     // updateBar: { // 最近更新栏
     //   showToArticle: false, // 显示到文章页底部，默认true
