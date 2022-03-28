@@ -37,8 +37,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         ],
       },*/
       {
-        text: '学习笔记',
-        link: '/note/',
+        text: 'Java',
+        link: '/java/',
         items: [
           {
             text: 'Java基础',
@@ -68,6 +68,10 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           {
             text: 'Git',
             link: '/pages/8292d8/',
+          },
+		  {
+            text: '数据库',
+            link: '/pages/mysql01/',
           },
         ],
       },
@@ -126,20 +130,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             items: [
               { text: 'Shiro', link: '/note/shiro/' },
             ],
-          },
-        ],
-      },
-      {
-        text: '数据库',
-        link: '/db/',
-        items: [
-          {
-            text: '基础',
-            link: '/note/dbbasic/',
-          },
-          {
-            text: 'MySQL',
-            link: '/note/mysql/',
           },
         ],
       },
