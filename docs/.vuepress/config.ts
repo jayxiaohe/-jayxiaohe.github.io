@@ -154,8 +154,9 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           {
             text: '其他',
             items: [
-              { text: '网站', link: '/note/javascript/' },
-              { text: '资源', link: '/note/js/' },
+              //{ text: '网站', link: '/note/javascript/' },
+              //{ text: '资源', link: '/note/js/' },
+			  { text: '一些技巧', link: '/pages/skills/' },
             ],
           },
         ],
