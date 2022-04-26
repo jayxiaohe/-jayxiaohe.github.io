@@ -1,8 +1,9 @@
 ---
 home: true
-heroImage: /img/logo_max.png
-heroText: 万物之中，希望至美
-tagline: 至美之物，永不凋零
+heroImage: /img/hard.webp
+#heroText: 万物之中，希望至美
+#tagline: 至美之物，永不凋零
+tagline: 虽然很辛苦 但是努力过真好
 # actionText: 立刻进入 →
 # actionLink: /web/
 # bannerBg: auto # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | 

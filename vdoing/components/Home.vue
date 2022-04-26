@@ -356,7 +356,7 @@ export default {
       overflow hidden
       .hero
         text-align center
-        margin-top 7rem
+        margin-top 20vh
         img
           max-width 100%
           max-height 240px
@@ -524,7 +524,7 @@ export default {
       .hero
         img
           max-height 210px
-          margin 2rem auto 1.2rem
+          margin 20rem auto 1.2rem
         h1
           font-size 2rem
         h1, .description, .action
