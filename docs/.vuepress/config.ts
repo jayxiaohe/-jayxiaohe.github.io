@@ -37,13 +37,13 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         ],
       },*/
       {
-        text: 'Java',
+        text: '基础',
         link: '/java/',
         items: [
           {
             text: 'Java基础',
-            //link: '/note/basic/',
-            link: '/pages/java01/',
+            link: '/pages/basic01/',
+            //link: '/pages/java01/',
           },
           {
             text: 'Java容器',
@@ -119,8 +119,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           {
             text: '分布式',
             items: [
-              { text: 'zookeeper', link: '/note/zk/' },
-              { text: 'Dubbo', link: '/note/dubbo/' },
+			  { text: 'Dubbo', link: '/pages/dubbo01/' },
+              { text: 'zookeeper', link: '/note/zk/' },              
               { text: 'netty', link: '/note/netty/' },
               { text: 'Redis',  link: '/note/redis/' },
             ],
@@ -135,7 +135,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
       { text: '博客', link: '/blog/' },
       {
-        text: '收藏夹',
+        text: '💙💜❤️',
         link: '/favo/',
         items: [
           {
