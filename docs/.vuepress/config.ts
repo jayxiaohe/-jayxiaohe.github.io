@@ -122,7 +122,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 			  { text: 'Dubbo', link: '/pages/dubbo01/' },
               { text: 'zookeeper', link: '/note/zk/' },              
               { text: 'netty', link: '/note/netty/' },
-              { text: 'Redis',  link: '/note/redis/' },
+              { text: 'Redis',  link: '/pages/redis01/' },
             ],
           },
           {
@@ -417,25 +417,25 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     ],
 
     // 评论区
-    //[
-    //  'vuepress-plugin-comment',
-    //  {
-    //    choosen: 'gitalk',
-    //    options: {
-    //      clientID: '9663b810da543d1a1dc1',
-    //      clientSecret: '22d747bf02709b75bfdcc0a31faa37f87ce67548',
-    //      repo: 'blog_comments', // GitHub 仓库
-    //      owner: 'jayxiaohe', // GitHub仓库所有者
-    //      admin: ['jayxiaohe'], // 对仓库有写权限的人
-    //      // distractionFreeMode: true,
-    //      pagerDirection: 'last', // 'first'正序 | 'last'倒序
-    //      id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
-    //      title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
-    //      labels: ['Gitalk', 'Comment'], // GitHub issue 的标签
-    //      body: '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
-    //    },
-    //  },
-    //],
+    [
+     'vuepress-plugin-comment',
+     {
+       choosen: 'gitalk',
+       options: {
+         clientID: '9663b810da543d1a1dc1',
+         clientSecret: '22d747bf02709b75bfdcc0a31faa37f87ce67548',
+         repo: 'blog_comments', // GitHub 仓库
+         owner: 'jayxiaohe', // GitHub仓库所有者
+         admin: ['jayxiaohe'], // 对仓库有写权限的人
+         // distractionFreeMode: true,
+         pagerDirection: 'last', // 'first'正序 | 'last'倒序
+         id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
+         title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
+         labels: ['Gitalk', 'Comment'], // GitHub issue 的标签
+         body: '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
+       },
+     },
+    ],
 
     // "上次更新"的时间格式
     [
