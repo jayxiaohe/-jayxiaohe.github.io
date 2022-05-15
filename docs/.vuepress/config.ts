@@ -55,7 +55,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           },
 		  {
             text: '设计模式',
-            link: '/pages/pattern01/',
+            link: '/design-pattern/thought/',
           },
           {
             text: 'JVM',
@@ -110,10 +110,10 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             text: 'Spring系列',
             items: [
               { text: 'Spring', link: '/pages/spring01/' },
-              { text: 'Spring MVC', link: '/pages/mvc01/' },
-              { text: 'Spring Security', link: '/note/springsecurity/' },
-              { text: 'Spring Boot', link: '/note/bot/' },
-              { text: 'Spring Cloud', link: '/note/cloud/' },
+              { text: 'Spring MVC', link: '/pages/mvc01/' },              
+              { text: 'Spring Boot', link: '/pages/boot01/' },
+              { text: 'Spring Cloud', link: '/pages/cloud01/' },
+			  { text: 'Spring Security', link: '/note/springsecurity/' },
             ],
           },
           {
@@ -135,7 +135,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
       { text: '博客', link: '/blog/' },
       {
-        text: '💙💜❤️',
+        text: '收藏',
         link: '/favo/',
         items: [
           {
@@ -188,7 +188,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       { text: '关于', link: '/about/' },
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
-    logo: '/img/logo.png', // 导航栏logo
+    //logo: '/img/logo.png', // 导航栏logo
+	logo: '/img/mrhe.png',
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
     //repo: 'xugaoyi/vuepress-theme-vdoing', // 导航栏右侧生成Github链接
@@ -211,16 +212,17 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时每隔15秒换一张。
     bodyBgImg: [
 		//'/img/wind.jpg'
+		//'/img/back.jpg'
 	], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时每隔15秒换一张。
     // bodyBgImgOpacity: 0.5, // body背景图透明度，选值 0.1~ 1.0, 默认0.5
-    bodyBgImgOpacity: 1.0, // body背景图透明度，选值 0.1~ 1.0, 默认0.5
+    bodyBgImgOpacity: 1, // body背景图透明度，选值 0.1~ 1.0, 默认0.5
     // titleBadge: false, // 文章标题前的图标是否显示，默认true
     // titleBadgeIcons: [ // 文章标题前图标的地址，默认主题内置图标
     //   '图标地址1',
     //   '图标地址2'
     // ],
     // contentBgStyle: 1, // 文章内容块的背景风格，默认无. 1 方格 | 2 横线 | 3 竖线 | 4 左斜线 | 5 右斜线 | 6 点状
-	//contentBgStyle: 6, // 文章内容块的背景风格，默认无. 1 方格 | 2 横线 | 3 竖线 | 4 左斜线 | 5 右斜线 | 6 点状
+	contentBgStyle: 1, // 文章内容块的背景风格，默认无. 1 方格 | 2 横线 | 3 竖线 | 4 左斜线 | 5 右斜线 | 6 点状
 
     // updateBar: { // 最近更新栏
     //   showToArticle: false, // 显示到文章页底部，默认true
@@ -486,6 +488,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         },
       },
     ],
+	 [ 'tabs' ], //vuepress-plugin-tabs
   ],
 
   markdown: {
