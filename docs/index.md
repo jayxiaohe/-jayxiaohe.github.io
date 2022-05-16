@@ -1,13 +1,19 @@
 ---
 home: true
-heroImage: /img/hard.webp
-#heroText: 万物之中，希望至美
+#heroImage: /img/hard.webp
+## heroText: 万物之中，希望至美
+heroText: Mr. He 🦸
+
 #tagline: 至美之物，永不凋零
 tagline: 虽然很辛苦 但是努力过真好
 # actionText: 立刻进入 →
 # actionLink: /web/
 # bannerBg: auto # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | 
-bannerBg: '/img/bannerBg.svg'
+### bannerBg: '/img/bannerBg.svg'
+
+## 首页大图
+pageClass: vdoing-index-class
+
 background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
 
 features: # 可选的
@@ -86,3 +92,7 @@ features: # 可选的
 - **GitHub**: <https://github.com/xugaoyi>
 
 </br>  -->
+
+<ClientOnly>
+  <IndexBigImg />
+</ClientOnly>

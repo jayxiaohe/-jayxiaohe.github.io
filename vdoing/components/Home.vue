@@ -356,7 +356,7 @@ export default {
       overflow hidden
       .hero
         text-align center
-        margin-top 20vh
+        margin-top 10vh // 首页标题所处的位置
         img
           max-width 100%
           max-height 240px
