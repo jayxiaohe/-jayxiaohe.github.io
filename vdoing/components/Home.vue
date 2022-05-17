@@ -137,24 +137,31 @@
 
       <template #mainRight>
         <BloggerBar v-if="$themeConfig.blogger" />
-        <CategoriesBar
-          v-if="
-            $themeConfig.category !== false &&
-            $categoriesAndTags.categories.length
-          "
-          :categoriesData="$categoriesAndTags.categories"
-          :length="10"
-        />
-        <TagsBar
-          v-if="$themeConfig.tag !== false && $categoriesAndTags.tags.length"
-          :tagsData="$categoriesAndTags.tags"
-          :length="30"
-        />
-        <div
+		
+		<Weather/>
+				
+		<div
           class="custom-html-box card-box"
           v-if="homeSidebarB"
           v-html="homeSidebarB"
         ></div>
+		
+		<!-- 首页隐藏文章分类
+			<CategoriesBar
+			  v-if="
+				$themeConfig.category !== false &&
+				$categoriesAndTags.categories.length
+			  "
+			  :categoriesData="$categoriesAndTags.categories"
+			  :length="10"
+			/>
+		-->
+		
+        <TagsBar
+          v-if="$themeConfig.tag !== false && $categoriesAndTags.tags.length"
+          :tagsData="$categoriesAndTags.tags"
+          :length="30"
+        />      
       </template>
     </MainLayout>
   </div>
@@ -171,6 +178,7 @@ import Pagination from '@theme/components/Pagination'
 import BloggerBar from '@theme/components/BloggerBar'
 import CategoriesBar from '@theme/components/CategoriesBar'
 import TagsBar from '@theme/components/TagsBar'
+import Weather from './Weather.vue'
 
 const MOBILE_DESKTOP_BREAKPOINT = 720 // refer to config.styl
 
@@ -238,7 +246,7 @@ export default {
       };
     }
   },
-  components: { NavLink, MainLayout, PostList, UpdateArticle, BloggerBar, CategoriesBar, TagsBar, Pagination },
+  components: { NavLink, MainLayout, PostList, UpdateArticle, BloggerBar, CategoriesBar, TagsBar, Pagination, Weather },
   created () {
     this.total = this.$sortPosts.length
   },

@@ -17,20 +17,21 @@
             </router-link>
           </h2>
           <div class="article-info">
-            <a
-              title="作者"
-              class="iconfont icon-touxiang"
-              target="_blank"
-              v-if="item.author && item.author.href"
-              :href="item.author.href"
-              >{{ item.author.name ? item.author.name : item.author }}</a
-            >
-            <span
-              title="作者"
-              class="iconfont icon-touxiang"
-              v-else-if="item.author"
-              >{{ item.author.name ? item.author.name : item.author }}</span
-            >
+		    <!--
+				<a
+				  title="作者"
+				  class="iconfont icon-touxiang"
+				  target="_blank"
+				  v-if="item.author && item.author.href"
+				  :href="item.author.href"
+				  >{{ item.author.name ? item.author.name : item.author }}</a>
+				<span
+				  title="作者"
+				  class="iconfont icon-touxiang"
+				  v-else-if="item.author"
+				  >{{ item.author.name ? item.author.name : item.author }}</span
+				>
+			-->
 
             <span
               title="创建时间"
@@ -100,7 +101,7 @@ export default {
     },
     perPage: {
       type: Number,
-      default: 10
+      default: 9
     }
   },
   data() {

@@ -141,5 +141,5 @@ export default {
         // &.active
         // border-left 0.2rem solid $accentColor
         // &:hover
-        // border-left 0.2rem solid $accentColor
+        // border-left 0.2rem solid $accentColor		
 </style>
