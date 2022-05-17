@@ -152,7 +152,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           },
         ],
       },
-      { text: '博客', link: '/blog/' },
+      { text: '随笔', link: '/essay/',
+		items:[
+			{text: '技术类', link: '/essay/typoramapkey/'},
+			{text: '生活类', link: '/essay/life/001/'},
+		]
+	  },
       {
         text: '收藏',
         link: '/favo/',
@@ -232,10 +237,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     bodyBgImg: [
 		//'/img/wind.jpg'
 		//'/img/back.jpg'
-		'https://notes.youngkbt.cn/img/index/bg.jpg'
+		'/img/bg1.jpg',
+		//'https://notes.youngkbt.cn/img/index/bg.jpg',
+		//'https://picture.zwc365.com/getbing.jpg'
 	], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时每隔15秒换一张。
     // bodyBgImgOpacity: 0.5, // body背景图透明度，选值 0.1~ 1.0, 默认0.5
-    bodyBgImgOpacity: 1, // body背景图透明度，选值 0.1~ 1.0, 默认0.5
+    bodyBgImgOpacity: 0.8, // body背景图透明度，选值 0.1~ 1.0, 默认0.5
     // titleBadge: false, // 文章标题前的图标是否显示，默认true
     // titleBadgeIcons: [ // 文章标题前图标的地址，默认主题内置图标
     //   '图标地址1',
@@ -268,6 +275,9 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       slogan: 'Do it now',
     },
 
+    // 自定义hmtl(广告)模块
+    htmlModules,
+	
     // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social)
     social: {
       // iconfontCssFile: '//at.alicdn.com/t/xxx.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自己添加。阿里图片库：https://www.iconfont.cn/
@@ -300,9 +310,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       createYear: 2018, // 博客创建年份
       copyrightInfo: 'HePengTao', //| <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签或换行标签</br>
     },
-
-    // 自定义hmtl(广告)模块
-    htmlModules,
   },
 
   // 注入到页面<head>中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
