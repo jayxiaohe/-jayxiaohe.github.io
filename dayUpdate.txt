@@ -5,3 +5,5 @@ pause
 git commit -m 'normal commit.'
 git push -f git@github.com:jayxiaohe/jayxiaohe.github.io.git master
 pause
+
+git commit -m '增加天气模块,内容页增宽-add'

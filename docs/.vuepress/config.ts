@@ -8,6 +8,7 @@ import dayjs from 'dayjs'
 import baiduCode from './config/baiduCode' // 百度统计hm码
 import htmlModules from './config/htmlModules' // 自定义插入的html块
 import { costomers } from 'vuepress/config'
+import { UserPlugins } from 'vuepress/config' //addbyhpt. 引入twikoo评论
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
   //theme: 'vdoing', // 使用npm包主题
@@ -249,7 +250,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     //   '图标地址2'
     // ],
     // contentBgStyle: 1, // 文章内容块的背景风格，默认无. 1 方格 | 2 横线 | 3 竖线 | 4 左斜线 | 5 右斜线 | 6 点状
-	contentBgStyle: 6, // 文章内容块的背景风格，默认无. 1 方格 | 2 横线 | 3 竖线 | 4 左斜线 | 5 右斜线 | 6 点状
 
     // updateBar: { // 最近更新栏
     //   showToArticle: false, // 显示到文章页底部，默认true
@@ -272,7 +272,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     blogger: {
       avatar: '/img/wxAvatar.jpg',
       name: 'HePengtao',
-      slogan: 'Do it now',
+      slogan: '你灵魂的欲望，是你命运的先知。',
     },
 
     // 自定义hmtl(广告)模块
@@ -315,6 +315,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   // 注入到页面<head>中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
   head: [
     ['link', { rel: 'icon', href: '/img/favicon.ico' }], //favicons，资源放在public文件夹
+	// addbyhpt.集成twikoo评论。
+	['script', { src: 'https://cdn.jsdelivr.net/npm/twikoo@1.5.10/dist/twikoo.all.min.js' }],
     // addbyhpt.代码块隐藏需要的内容-start
     [
       'link',
@@ -353,7 +355,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       {
         name: 'custom-plugins',
         //globalUIComponents: ["GlobalTip", "BlockToggle"] // 2.x 版本 globalUIComponents 改名为 clientAppRootComponentFiles
-        globalUIComponents: ['GlobalTip','BlockToggle','LastReadingPopup'],
+        globalUIComponents: ['GlobalTip','BlockToggle','LastReadingPopup', 'Twikoo'],
       },
     ],
 
@@ -446,6 +448,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     ],
 
     // 评论区
+	/** 屏蔽掉。使用twikoo评论。
     [
      'vuepress-plugin-comment',
      {
@@ -465,6 +468,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
        },
      },
     ],
+	**/
 
     // "上次更新"的时间格式
     [
@@ -476,54 +480,55 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
     ],
 
-    // 音乐播放器
+    // 音乐播放器 https://github.com/metowolf/MetingJS
 	// 因为暗黑模式下播放器仍显示白色，暂时屏蔽
 	['meting'],
-	/**
-    [
-      'meting',
-      {
-        meting: {
-          // 网易
-          server: 'netease',
-          // 读取歌单列表
-          type: 'playlist',
-          mid: '7311154894',
-          // 自动播放
-          autoplay: true,
-          preload: 'auto',
-        },
-        // 不配置该项的话不会出现全局播放器		
-        aplayer: {
-          // 吸底模式
-          fixed: true,
-          mini: true,
-          // 自动播放
-          autoplay: true,
-          // 歌曲栏折叠
-          listFolded: true,
-          // 颜色
-          theme: '#3eaf7c', //"#f9bcdd",
-          // 播放顺序为随机
-          order: 'random', //"list"
-          // 初始音量
-          volume: 0.2,
-          // 关闭歌词显示。可选值： 3 | 1 | 0（0：禁用 lrc 歌词，1：lrc 格式的字符串，3：lrc 文件 url）
-          lrcType: 0, //0,
-          preload: 'auto',
-        },
-        mobile: {
-          // 手机端去掉cover图
-          cover: false,
-        },
-      },
-    ],**/
+		[
+		  'meting',
+		  {
+			meting: {
+			  // 网易/ 腾讯
+			  server: 'tencent',
+			  // 读取歌单列表
+			  type: 'playlist',
+			  mid: '6474117513',
+			  // 自动播放
+			  autoplay: true,
+			  preload: 'auto',
+			},
+			// 不配置该项的话不会出现全局播放器		
+			aplayer: {
+			  // 吸底模式
+			  fixed: true,
+			  mini: true,
+			  // 自动播放
+			  autoplay: true,
+			  // 歌曲栏折叠
+			  listFolded: true,
+			  // 颜色
+			  theme: '#3eaf7c', //"#f9bcdd",
+			  // 播放顺序为随机
+			  order: 'random', //"list"
+			  // 初始音量
+			  volume: 0.5,
+			  // 关闭歌词显示。可选值： 3 | 1 | 0（0：禁用 lrc 歌词，1：lrc 格式的字符串，3：lrc 文件 url）
+			  lrcType: 0, //0,
+			  preload: 'auto',
+			},
+			mobile: {
+			  // 手机端去掉cover图
+			  cover: false,
+			},
+		  },
+	],
+
+	
 	 [ 'tabs' ], //vuepress-plugin-tabs
 	 ['reading-progress',
 		{
-			fixed: 'bottom',
+			fixed: 'top',
 		}
-	  ], // 阅读进度
+	 ], // 阅读进度
   ],
 
   markdown: {

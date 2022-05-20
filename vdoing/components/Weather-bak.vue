@@ -2,8 +2,10 @@
 
 
 <template>
-  <div class="we tags-wrapper1 card-box">
-      <div id="he-plugin-standard"></div>
+  <div>
+	<div class="we card-box" >
+        <div id="he-plugin-standard"></div>
+    </div>
   </div>
 </template>
 
@@ -14,7 +16,7 @@ export default {
     window.WIDGET = {
         "CONFIG": {
         "layout": "2",
-        "width": "233",
+        "width": "245",
         "height": 270,
         "background": "5",
         "dataColor": "9B9BAA",
@@ -35,23 +37,5 @@ export default {
 .we
   height auto  
   width 100%
-  
-.tags-wrapper1
-  padding .5rem .5rem
-  .title
-    color var(--textColor)
-    opacity 0.9
-    font-size 1.2rem
-    &::before
-      margin-right 0.3rem
-	  
-// 719px以下
-@media (max-width $MQMobile)
-  .tags-wrapper1
-    padding .5rem 4.5rem
-	margin 0 0 0 0
-	border-radius 0
-	width 100%	  
 </style>
-
 
