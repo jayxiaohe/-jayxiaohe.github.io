@@ -146,22 +146,23 @@
           v-html="homeSidebarB"
         ></div>
 		
-		<!-- 首页隐藏文章分类
-			<CategoriesBar
-			  v-if="
-				$themeConfig.category !== false &&
-				$categoriesAndTags.categories.length
-			  "
-			  :categoriesData="$categoriesAndTags.categories"
-			  :length="10"
-			/>
-		-->
 		
+		<CategoriesBar
+		  v-if="
+			$themeConfig.category !== false &&
+			$categoriesAndTags.categories.length
+		  "
+		  :categoriesData="$categoriesAndTags.categories"
+		  :length="10"
+		/>
+		
+		<!-- 首页隐藏文章标签
         <TagsBar
           v-if="$themeConfig.tag !== false && $categoriesAndTags.tags.length"
           :tagsData="$categoriesAndTags.tags"
           :length="30"
         />      
+		-->
       </template>
     </MainLayout>
   </div>

@@ -62,30 +62,36 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         items: [
           {
             text: 'Java基础',
-            link: '/pages/basic01/',
+            link: '/java/basic01/',
             //link: '/pages/java01/',
           },
           {
             text: 'Java容器',
-            link: '/pages/rongqi01/',
+            link: '/collection/rongqi01/',
           },
           {
             text: '多线程',
-            link: '/pages/thread01/',
+            link: '/thread/thread01/',
           },
+          {
+            text: 'Java8',
+            link: '/java8/lambda/',
+          },
+        ],
+      },
+	  {
+        text: '进阶',
+        link: '/pro/',
+        items: [
 		  {
             text: '设计模式',
             link: '/design-pattern/thought/',
           },
-          {
+		  {
             text: 'JVM',
-            link: '/pages/jvm01/',
+            link: '/jvm/intro/',
           },
-          {
-            text: 'Java8',
-            link: '/pages/java801/',
-          },
-          {
+		  {
             text: 'Git',
             link: '/pages/8292d8/',
           },
@@ -160,11 +166,18 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 		]
 	  },
       {
-        text: '收藏',
-        link: '/favo/',
+        text: '更多',
+        link: '/more/',
         items: [
+		  {
+            text: '资源',
+            items: [
+              { text: '网站', link: '/more/websit/' },
+              { text: '前端', link: '/more/front/' },
+            ],
+          },
           {
-            text: '常用',
+            text: '其他',
             items: [
               { text: 'Leetcode', link: 'https://leetcode-cn.com/problemset/all/' },
               { text: 'javaguide', link: 'https://javaguide.cn/' },
@@ -176,14 +189,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
               { text: '百度站长', link: 'https://ziyuan.baidu.com/site/' },
             ],
           },
-          {
-            text: '其他',
-            items: [
-              //{ text: '网站', link: '/note/javascript/' },
-              //{ text: '资源', link: '/note/js/' },
-			  { text: '一些技巧', link: '/pages/skills/' },
-            ],
-          },
         ],
       },
       {
@@ -193,6 +198,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           { text: '分类', link: '/categories/' },
           { text: '标签', link: '/tags/' },
           { text: '归档', link: '/archives/' },
+		  { text: '关于', link: '/about/' },
         ],
       },
       /*{
@@ -210,7 +216,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           },
         ],
       },*/
-      { text: '关于', link: '/about/' },
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     //logo: '/img/logo.png', // 导航栏logo
@@ -316,7 +321,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   head: [
     ['link', { rel: 'icon', href: '/img/favicon.ico' }], //favicons，资源放在public文件夹
 	// addbyhpt.集成twikoo评论。
-	['script', { src: 'https://cdn.jsdelivr.net/npm/twikoo@1.5.10/dist/twikoo.all.min.js' }],
+	['script', { src: 'https://cdn.bootcdn.net/ajax/libs/twikoo/1.5.10/twikoo.all.min.js' }],
     // addbyhpt.代码块隐藏需要的内容-start
     [
       'link',

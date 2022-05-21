@@ -6,4 +6,4 @@ git commit -m 'normal commit.'
 git push -f git@github.com:jayxiaohe/jayxiaohe.github.io.git master
 pause
 
-git commit -m '增加天气模块,内容页增宽-add'
+git commit -m '修正设计模式内容，使用新的评论插件'
