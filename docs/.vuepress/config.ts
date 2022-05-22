@@ -167,29 +167,17 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 	  },
       {
         text: '更多',
-        link: '/more/',
+        //link: '/more/',
         items: [
-		  {
-            text: '资源',
-            items: [
-              { text: '网站', link: '/more/websit/' },
-              { text: '前端', link: '/more/front/' },
-            ],
-          },
-          {
-            text: '其他',
-            items: [
-              { text: 'Leetcode', link: 'https://leetcode-cn.com/problemset/all/' },
-              { text: 'javaguide', link: 'https://javaguide.cn/' },
-              { text: '美团技术', link: 'https://tech.meituan.com/' },
-              { text: '淘系技术', link: 'https://tech.taobao.org/news' },
-              { text: '小米技术', link: 'https://xiaomi-info.github.io/tags/' },
-              { text: 'thoughtworks', link: 'https://insights.thoughtworks.cn/' },
-              { text: '微信读书', link: 'https://weread.qq.com/' },
-              { text: '百度站长', link: 'https://ziyuan.baidu.com/site/' },
-            ],
-          },
-        ],
+		  { text: 'Leetcode', link: 'https://leetcode-cn.com/problemset/all/' },
+		  { text: 'javaguide', link: 'https://javaguide.cn/' },
+		  { text: '美团技术', link: 'https://tech.meituan.com/' },
+		  { text: '淘系技术', link: 'https://tech.taobao.org/news' },
+		  { text: '小米技术', link: 'https://xiaomi-info.github.io/tags/' },
+		  { text: 'thoughtworks', link: 'https://insights.thoughtworks.cn/' },
+		  { text: '微信读书', link: 'https://weread.qq.com/' },
+		  { text: '百度站长', link: 'https://ziyuan.baidu.com/site/' },
+		],
       },
       {
         text: '索引',
