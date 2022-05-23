@@ -136,8 +136,8 @@ export default {
   },
   methods: {
     toggleMode (key) {
-	  //addbyhpt. 如果key==dark，移除背景图片。否则设置。start...
-	  if(key == 'dark') {
+	  //addbyhpt. 如果key==dark/read，移除背景图片。否则设置。start...
+	  if(key == 'dark' || key == 'read') {
 		 if (document.getElementsByClassName("body-bg")[0]){
 			document.getElementsByClassName("body-bg")[0].style.background='';
 		 }
@@ -146,7 +146,7 @@ export default {
 			document.getElementsByClassName("body-bg")[0].style.background='url("/img/bg1.jpg") center center / cover no-repeat';			
 		 }
 	  }
-	  //addbyhpt. 如果key==dark，移除背景图片。end...
+	  //addbyhpt. 如果key==dark/read，移除背景图片。end...
       this.currentMode = key
       this.$emit('toggle-theme-mode', key)
     },

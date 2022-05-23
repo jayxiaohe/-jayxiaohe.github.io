@@ -361,7 +361,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
        //color: '#11a8cd', // 爱心颜色，默认随机色
        excludeClassName: 'theme-vdoing-content' // 要排除元素的class, 默认空''
     }],
-
+	// 流程图flowchart
+	['vuepress-plugin-flowchart'],
     // 百度自动推送
     ['vuepress-plugin-baidu-autopush', {}],
 
