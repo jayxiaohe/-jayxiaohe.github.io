@@ -89,7 +89,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           },
 		  {
             text: 'JVM',
-            link: '/jvm/intro/',
+            link: '/jvm/interview/',
           },
 		  {
             text: 'Git',
@@ -102,6 +102,44 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         ],
       },
       {
+        text: '框架',
+        link: '/framework/',
+        items: [
+          {
+            text: 'Spring系列',
+            items: [
+              { text: 'Spring', link: '/pages/spring01/' },
+              { text: 'Spring MVC', link: '/pages/mvc01/' },              
+              { text: 'Spring Boot', link: '/pages/boot01/' },
+              { text: 'Spring Cloud', link: '/pages/cloud01/' },
+			  { text: 'Spring Security', link: '/note/springsecurity/' },
+            ],
+          },
+		  {
+            text: 'ORM',
+            items: [
+              { text: 'MyBatis', link: '/mybatis/interview/' },
+			  //{ text: 'MP', link: '/pages/spring01/' },
+            ],
+          },
+          {
+            text: '分布式',
+            items: [
+			  { text: 'Dubbo', link: '/pages/dubbo01/' },
+              { text: 'zookeeper', link: '/note/zk/' },                            
+              { text: 'Redis',  link: '/pages/redis01/' },
+            ],
+          },
+          {
+            text: '其他',
+            items: [
+              { text: 'Shiro', link: '/note/shiro/' },
+			  { text: 'netty', link: '/note/netty/' },
+            ],
+          },
+        ],
+      },
+	  {
         text: '算法',
         link: '/algo/', // 和 /docs/00.目录页/02.算法.md 的permalink值 对应！
         items: [
@@ -128,38 +166,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           },
         ],
       },
-      {
-        text: '框架',
-        link: '/framework/',
-        items: [
-          {
-            text: 'Spring系列',
-            items: [
-              { text: 'Spring', link: '/pages/spring01/' },
-              { text: 'Spring MVC', link: '/pages/mvc01/' },              
-              { text: 'Spring Boot', link: '/pages/boot01/' },
-              { text: 'Spring Cloud', link: '/pages/cloud01/' },
-			  { text: 'Spring Security', link: '/note/springsecurity/' },
-            ],
-          },
-          {
-            text: '分布式',
-            items: [
-			  { text: 'Dubbo', link: '/pages/dubbo01/' },
-              { text: 'zookeeper', link: '/note/zk/' },              
-              { text: 'netty', link: '/note/netty/' },
-              { text: 'Redis',  link: '/pages/redis01/' },
-            ],
-          },
-          {
-            text: '其他',
-            items: [
-              { text: 'Shiro', link: '/note/shiro/' },
-            ],
-          },
-        ],
-      },
-      { text: '随笔', link: '/essay/',
+      { text: '文章', link: '/essay/',
 		items:[
 			{text: '技术类', link: '/essay/typoramapkey/'},
 			{text: '生活类', link: '/essay/life/001/'},
@@ -482,10 +489,10 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 		  {
 			meting: {
 			  // 网易/ 腾讯
-			  server: 'tencent',
+			  server: 'netease', //'tencent',
 			  // 读取歌单列表
 			  type: 'playlist',
-			  mid: '6474117513',
+			  mid: '3205879125',
 			  // 自动播放
 			  autoplay: true,
 			  preload: 'auto',

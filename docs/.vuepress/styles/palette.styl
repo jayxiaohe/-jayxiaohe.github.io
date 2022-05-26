@@ -152,17 +152,128 @@ p code {
   .custom-block.details
     border solid 1px #ddd
 
+
+
 // 深色模式
 .theme-mode-dark
+  --bodyBg: rgb(30,30,34,1)
+  --mainBg: rgba(30,30,34,1)
+  --sidebarBg: rgba(30,30,34,.8)
+  --blurBg: rgba(30,30,34,.8)
+  --customBlockBg: rgb(39,39,43)
+  --textColor: rgb(155,155,170)
+  --textLightenColor: #0085AD
+  --borderColor: #2C2C3A
+  --codeBg: #252526
+  --codeColor: #fff
+  codeThemeDark()
+  div[class*="language-"].line-numbers-mode::after  // 代码块的行数和内容分割线颜色
+    border-right 1px solid rgba(0, 0, 0, 0.66)
+  // 引用的颜色
+  blockquote
+    background-color rgba(25, 25, 49, 0.53)
+    border-left .25rem solid #3eaf7c
+    padding 10px 16px
+  // 首页每一个模块的边框
+  .card-box
+    border-radius: 5px;
+    background var(--mainBg);
+    box-shadow 0 2px 10px 0 rgba(0,0,0,.20);
+    transition box-shadow 0.5s;
+  .card-box:hover
+    box-shadow 2px 2px 15px 2px rgba(0,0,0,.40);
+  // mark 标签配置
+  mark
+    color #d63200
+    border .1em solid #d63200
+    background-color transparent
+    padding .1rem .5rem
+    border-radius 2rem
+    margin 0 .2rem
+    font-size .95rem
+  // 表格的样式
+  table
+    border-color #1d1d26
+    thead
+      background-color #2c2c47
+      font-size 1.02rem
+  tr:nth-child(2n)
+    background-color #2c2c47
+  // 信息框容器颜色
+  .custom-block.tip,
+  .custom-block.warning,
+  .custom-block.danger,
+  .custom-block.note
+    background-color rgba(25,25,49,0.53)
+  .custom-block.danger
+    color #ff4545
+    .custom-block-title
+      color #ff4545
+  .custom-block.note
+    color #28a1de
+  // 鼠标悬停、a 标签颜色，主题默认颜色 #11a8cd
+  .nav-item > a:not(.external):hover,
+  .nav-item > a:not(.external).router-link-active,
+  .nav-item .dropdown-title a:hover,    // 导航栏悬停
+  .nav-item .dropdown-title a.router-link-active,
+  .dropdown-wrapper .dropdown-title .title:hover    // 导航栏非 a 标签
+    border-bottom 2px solid #3eaf7c
+
+  a.sidebar-link.active     // 侧边栏当前标题
+    color #3eaf7c
+    border-left-color #3eaf7c
+
+  .post-list .post .title-wrapper a:hover,   // 首页文章列表悬停
+  .blogger-wrapper .icons a:hover,     // 首页头像下的图标悬停
+  .categories-wrapper .categories a:not(.active):hover,   // 文章分类悬停
+  .pagination span:hover,       // 首页的上一页和下一页悬停
+  a.sidebar-link:hover,   // 侧边栏悬停
+  .right-menu-wrapper .right-menu-content .right-menu-item.active a,  // 文章右侧当前标题
+  .right-menu-wrapper .right-menu-content .right-menu-item a:hover,   // 文章右侧标题悬停
+  .dropdown-wrapper .nav-dropdown .dropdown-item a:hover,   // 导航栏的二级导航悬停
+  .dropdown-wrapper .nav-dropdown .dropdown-item a.router-link-active,   // 导航栏的选中二级导航
+  .buttons .button .select-box li.active,    // 当前主题模式
+  .buttons .button .select-box li:hover,      // 三个主题模式悬停 
+  .archives-page .theme-vdoing-wrapper li a:hover,   // 归档列表悬停
+  .search-box .suggestions .focused a:hover,   // 搜索框内容鼠标悬停
+  .custom-block.details summary:hover     // ::: details 的标题悬停
+    color #3eaf7c
+
+  .categories-wrapper .categories a:not(.active):hover,   // 文章分类悬停
+  .right-menu-wrapper .right-menu-content .right-menu-item.active,
+  .search-box input:focus   // 搜索框获取焦点
+    border-color #3eaf7c
+
+  .buttons .button:hover      // 右下角三个图标
+    background #904ac2
+    box-shadow 0 0 15px #904ac2
+  .pagination .pagination-list span.active,     // 分页的当前页
+  .search-box .suggestions .parent-page-title   // 搜索框的标题
+    background #904ac2
+
+  // vuepress-plugin-tabs 插件的背景色
+  .tabs-component-tab,
+  .tabs-component-panels
+    background-color rgba(25,25,49,0.53)
+    border none
+  // vuepress-plugin-tabs 插件的标题选中颜色
+  .tabs-component-tab.is-active       
+    color #3eaf7c
+  
+
+
+
+// 深色模式123
+.theme-mode-dark123
   --bodyBg: rgba(40,40,56,1)
   --mainBg: rgba(40,40,56,1)
   --sidebarBg: rgba(40,40,56,.8)
   --blurBg: rgba(40,40,56,.9)
   --customBlockBg: rgba(25,25,49,0.53)
   --textColor: #acb7c4
-  --textLightenColor: #d63200   // `` 包裹的文字颜色
-  --borderColor: #1d1d26
-  --codeBg: #282C34 // <code>包裹的文字的背景颜色
+  --textLightenColor: #0085AD   // <code>包裹的文字颜色
+  --borderColor: #2C2C3A
+  --codeBg: #ffffff //code>包裹的文字的背景颜色
   --codeColor: #A9B7C6
   codeThemeDark()
   div[class*="language-"].line-numbers-mode::after  // 代码块的行数和内容分割线颜色
