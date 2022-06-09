@@ -57,7 +57,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         ],
       },*/
       {
-        text: '基础',
+        text: '核心',
         link: '/java/',
         items: [
           {
@@ -73,23 +73,17 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             text: '多线程',
             link: '/thread/thread01/',
           },
+		  {
+            text: 'JVM',
+            link: '/jvm/interview/',
+          },
           {
             text: 'Java8',
             link: '/java8/lambda/',
           },
-        ],
-      },
-	  {
-        text: '进阶',
-        link: '/pro/',
-        items: [
 		  {
             text: '设计模式',
             link: '/design-pattern/thought/',
-          },
-		  {
-            text: 'JVM',
-            link: '/jvm/interview/',
           },
 		  {
             text: 'Git',
@@ -106,14 +100,15 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         link: '/framework/',
         items: [
           {
-            text: 'Spring系列',
+			text: 'Spring系列', link: '/pages/spring01/'
+            /**text: 'Spring系列',
             items: [
               { text: 'Spring', link: '/pages/spring01/' },
               { text: 'Spring MVC', link: '/pages/mvc01/' },              
               { text: 'Spring Boot', link: '/pages/boot01/' },
               { text: 'Spring Cloud', link: '/pages/cloud01/' },
 			  { text: 'Spring Security', link: '/note/springsecurity/' },
-            ],
+            ],**/
           },
 		  {
             text: 'ORM',
@@ -130,13 +125,15 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
               { text: 'Redis',  link: '/pages/redis01/' },
             ],
           },
-          {
-            text: '其他',
-            items: [
-              { text: 'Shiro', link: '/note/shiro/' },
-			  { text: 'netty', link: '/note/netty/' },
-            ],
-          },
+        ],
+      },
+	  {
+        text: '其他',
+        link: '/others/',
+        items: [
+		  { text: 'elastic-job', link: '/others/esjob-01/' },
+		  { text: 'Shiro', link: '/note/shiro/' },
+		  { text: 'netty', link: '/note/netty/' },		  
         ],
       },
 	  {
