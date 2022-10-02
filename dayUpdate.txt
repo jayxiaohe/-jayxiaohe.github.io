@@ -1,0 +1,9 @@
+git status
+pause
+git add .
+pause
+git commit -m 'normal commit.'
+git push -f git@github.com:jayxiaohe/jayxiaohe.github.io.git master
+pause
+
+git commit -m '修正设计模式内容，使用新的评论插件'
