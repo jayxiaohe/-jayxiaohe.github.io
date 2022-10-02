@@ -3,15 +3,19 @@ lockfileVersion: 5.4
 specifiers:
   '@vuepress/client': 2.0.0-beta.51
   '@vuepress/plugin-search': 2.0.0-beta.51
+  gray-matter: 4.0.3
   vue: ^3.2.29
   vuepress: 2.0.0-beta.51
+  vuepress-plugin-baidu-autopush: ^1.0.1
   vuepress-theme-hope: 2.0.0-beta.106
 
 devDependencies:
   '@vuepress/client': 2.0.0-beta.51
   '@vuepress/plugin-search': 2.0.0-beta.51
+  gray-matter: 4.0.3
   vue: 3.2.40
   vuepress: 2.0.0-beta.51_cf67x7swsxhuhjarakslfn5yh4
+  vuepress-plugin-baidu-autopush: 1.0.1
   vuepress-theme-hope: 2.0.0-beta.106
 
 packages:
@@ -4964,6 +4968,10 @@ packages:
       '@vue/runtime-dom': 3.2.40
       '@vue/server-renderer': 3.2.40_vue@3.2.40
       '@vue/shared': 3.2.40
+    dev: true
+
+  /vuepress-plugin-baidu-autopush/1.0.1:
+    resolution: {integrity: sha512-KVQkrmMgPY+GG8dtI2wcRxUv1n2h5DM8aFs75ltsSlFBSS9C/vfLb2LmywXAsoCXk2EHya2p66cpn7BxofK+Mw==}
     dev: true
 
   /vuepress-plugin-blog2/2.0.0-beta.106:
