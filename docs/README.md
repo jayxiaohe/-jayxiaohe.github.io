@@ -22,7 +22,7 @@ features:
   - title: 框架
     icon: leaf
     details: Spring系列、Cloud系列、MyBatis、Dubbo、Zookeeper、MQ、Netty 等内容的总结
-    link: /20框架/
+    link: /20frame/
 
   - title: 数据库
     icon: material
