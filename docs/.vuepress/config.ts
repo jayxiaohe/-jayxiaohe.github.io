@@ -1,8 +1,6 @@
 import { searchPlugin } from "@vuepress/plugin-search";
 import { defineUserConfig } from "vuepress";
 import { hopeTheme } from "vuepress-theme-hope";
-//https://vuepress.qbb.sh/china-search-console/#install
-import { searchConsolePlugin } from 'vuepress-plugin-china-search-console';
 import theme from "./theme";
 
 export default defineUserConfig({
@@ -23,9 +21,9 @@ export default defineUserConfig({
       maxSuggestions: 10,
     }),
 
-    searchConsolePlugin({
+    /*searchConsolePlugin({
       baiduId: '5ac4c710aadf202967aed6b86cfa8bb7',
-    })
+    }) */
 
     /** Comment: {
       type: "waline",

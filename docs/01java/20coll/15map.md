@@ -76,7 +76,7 @@ tags:
 
 `TreeMap` 和`HashMap` 都继承自`AbstractMap` ，但是需要注意的是`TreeMap`它还实现了`NavigableMap`接口和`SortedMap` 接口。
 
-![](D:\0.devTools\19.vuepress\blog\docs\01.学习笔记\20.Java容器\images\TreeMap继承结构.png)
+
 
 实现 `NavigableMap` 接口让 `TreeMap` 有了对集合内元素的搜索的能力。
 
@@ -222,7 +222,7 @@ static int hash(int h) {
 
 所谓 **“拉链法”** 就是：将链表和数组相结合。也就是说创建一个链表数组，数组中每一格就是一个链表。若遇到哈希冲突，则将冲突的值加到链表中即可。
 
-![jdk1.8之前的内部结构-HashMap](D:\0.devTools\19.vuepress\blog\docs\01.学习笔记\20.Java容器\images\jdk1.8之前的内部结构-HashMap.png)
+[此处需要补充图片：jdk1.8之前的内部结构-HashMap.png]
 
 ### JDK1.8 之后
 
