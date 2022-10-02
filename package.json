@@ -4,6 +4,10 @@
   "description": "A project of vuepress-theme-hope",
   "license": "MIT",
   "scripts": {
+    "build": "vuepress build docs",
+    "dev": "vuepress dev docs",
+    "deploy": "bash deploy.sh",
+    "baiduPush": "node utils/baiduPush.js https://i.iyes.life && bash baiduPush.sh",
     "docs:build": "vuepress build docs",
     "docs:clean-dev": "vuepress dev docs --clean-cache",
     "docs:dev": "vuepress dev docs"
