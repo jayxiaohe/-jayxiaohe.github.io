@@ -4,6 +4,7 @@ date: 2019-12-25 14:27:01
 permalink: /about
 sidebar: false
 article: false
+toc: false
 ---
 
 ::: tip 🎈🎈🎈
@@ -19,14 +20,11 @@ article: false
 
 **当前配置：**
 
-- 系统：[vuepress <Badge text="v2.x"/>](https://vuepress.vuejs.org/zh/)
+- 系统：[vuepress v2.x](https://vuepress.vuejs.org/zh/)
 
-<!-- - 主题：[vdoing](https://doc.xugaoyi.com/) -->
-- 主题：[hope <Badge text="v2"/>](https://vuepress-theme-hope.github.io/v2/zh/)
-
-- 编辑工具：typora
-
-- 托管 & 图床：git page
+- 主题：[hope  v2.x](https://vuepress-theme-hope.github.io/v2/zh/)
+- 编辑工具：typora [相关总结](/50tools/typora/)
+- 托管：[netlify](https://www.netlify.com/)
 
 
 
@@ -46,21 +44,9 @@ article: false
 
 ## 📬 联系我
 
-::: details
-
 <center><img src="/qr.jpg" width = "150" height = "150"/></center>
 <center>添加时请注明来意，谢谢~~~</center>
 
-:::
-
-<br/>
-
-<Meting server="netease"
-        type="playlist"
-        mid="7311154894"
-        :lrc-type="3"
-        autoplay="true"
-        theme="#3eaf7c"/>
 <br/>
 <!-- 小熊猫
 <img src="/img/panda-waving.png" class="panda no-zoom" style="width: 130px;height: 115px;opacity: 0.8;margin-bottom: -4px;padding-bottom:0;position: fixed;bottom: 0;left: 0.5rem;z-index: 1;">  -->

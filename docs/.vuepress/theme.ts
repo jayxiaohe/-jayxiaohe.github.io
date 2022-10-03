@@ -29,8 +29,8 @@ export default hopeTheme({
   // 导航栏的布局。
   navbarLayout: {
     left: ["Brand"],
-    center: ["Links", "Search"],
-    right: ["Language", "Repo", "Outlook"],
+    center: ["Links"],
+    right: ["Language", "Repo", "Outlook", "Search"],
   },
 
   //docsDir: "demo/src",
@@ -101,17 +101,15 @@ export default hopeTheme({
     // 为了避免打扰主题开发者以及消耗他的资源，请不要在你的正式环境中直接使用下列配置!!!!!
     comment: {
       // Using Giscus
-      /**
       provider: "Giscus",
-      repo: "vuepress-theme-hope/giscus-discussions",
-      repoId: "R_kgDOG_Pt2A",
+      repo: "jayxiaohe.github.io/giscus-discussions",
+      repoId: "R_kgDOG7ZcUg",
       category: "Announcements",
-      categoryId: "DIC_kwDOG_Pt2M4COD69",
-      */
+      categoryId: "DIC_kwDOG7ZcUs4CRxJH",
 
       // Using Twikoo
-      provider: "Twikoo",
-      envId: "https://twikoo-qsqz.vercel.app/",
+      /**provider: "Twikoo",
+      envId: "https://twikoo-qsqz.vercel.app/",*/
 
       // Using Waline
       // provider: "Waline",

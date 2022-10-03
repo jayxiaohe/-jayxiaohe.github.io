@@ -4,7 +4,7 @@ icon: home
 title: 主页
 heroImage: /mrhe.png
 heroText: 万物之中，希望至美。
-tagline: 相关知识、面试题等内容的记录和总结。
+tagline: Java相关知识、面试题，工具软件，随笔感想等内容的记录。
 actions:
   - text: 开始阅读 ✨
     link: /01java/
@@ -41,15 +41,15 @@ features:
 
   - title: 工具
     icon: module
-    details: Git、IDEA、Typora 等编程工具及其他办公娱乐工具、网站的总结和记录
-    link: https://vuepress-theme-hope.github.io/v2/zh/guide/layout/
+    details: 一些常用软件、工具、网站等的总结和记录
+    link: /50tools/
 
   - title: 随笔
     icon: style
     details: 一些工作记录、阅读心得、生活记录等内容
     link: https://vuepress-theme-hope.github.io/v2/zh/guide/layout/ 
 
-  - title: '联系我'
+  - title: '关于我'
     icon: 'wechat'
     details: 🎉🎉🎉
     link: /about

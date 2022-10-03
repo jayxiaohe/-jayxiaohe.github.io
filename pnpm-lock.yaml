@@ -4,9 +4,11 @@ specifiers:
   '@vuepress/client': 2.0.0-beta.51
   '@vuepress/plugin-search': 2.0.0-beta.51
   gray-matter: 4.0.3
-  vue: ^3.2.29
+  vue: ^3.2.40
   vuepress: 2.0.0-beta.51
   vuepress-plugin-baidu-autopush: ^1.0.1
+  vuepress-plugin-md-enhance: 2.0.0-beta.106
+  vuepress-plugin-meting: ^0.3.3
   vuepress-theme-hope: 2.0.0-beta.106
 
 devDependencies:
@@ -16,6 +18,8 @@ devDependencies:
   vue: 3.2.40
   vuepress: 2.0.0-beta.51_cf67x7swsxhuhjarakslfn5yh4
   vuepress-plugin-baidu-autopush: 1.0.1
+  vuepress-plugin-md-enhance: 2.0.0-beta.106
+  vuepress-plugin-meting: 0.3.3_vue@3.2.40
   vuepress-theme-hope: 2.0.0-beta.106
 
 packages:
@@ -1118,7 +1122,7 @@ packages:
       babel-plugin-polyfill-corejs2: 0.3.3_@babel+core@7.19.3
       babel-plugin-polyfill-corejs3: 0.6.0_@babel+core@7.19.3
       babel-plugin-polyfill-regenerator: 0.4.1_@babel+core@7.19.3
-      core-js-compat: 3.25.3
+      core-js-compat: 3.25.4
       semver: 6.3.0
     transitivePeerDependencies:
       - supports-color
@@ -1323,6 +1327,14 @@ packages:
     resolution: {integrity: sha512-ROz5zVKt3COpuWUYFnpJh5kIXit9SQeMtimGBlwKJL1xEBNPG3QKD3VZzez5Ng/dBCApianCQhNVZGCza82Myw==}
     dev: true
 
+  /@moefe/vue-aplayer/2.0.0-beta.5_vue@3.2.40:
+    resolution: {integrity: sha512-ytzp4GStzjftuh7H1rIS/ziqwV1FO67iTLSkDxgN0J2bqlO+rBgDDr83Y+pZKBIgRUc30uu/UZHqmE4QiBHHeg==}
+    peerDependencies:
+      vue: ^2.2.0
+    dependencies:
+      vue: 3.2.40
+    dev: true
+
   /@nodelib/fs.scandir/2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
     engines: {node: '>= 8'}
@@ -1420,7 +1432,7 @@ packages:
   /@types/fs-extra/9.0.13:
     resolution: {integrity: sha512-nEnwB++1u5lVDM2UI4c1+5R+FYaKfaAzS4OococimjVm3nQw3TuzH5UNsocrcTBbhnerblyHj4A49qXbIiZdpA==}
     dependencies:
-      '@types/node': 18.7.23
+      '@types/node': 18.8.0
     dev: true
 
   /@types/hash-sum/1.0.0:
@@ -1464,14 +1476,14 @@ packages:
     resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
     dev: true
 
-  /@types/node/18.7.23:
-    resolution: {integrity: sha512-DWNcCHolDq0ZKGizjx2DZjR/PqsYwAcYUJmfMWqtVU2MBMG5Mo+xFZrhGId5r/O5HOuMPyQEcM6KUBp5lBZZBg==}
+  /@types/node/18.8.0:
+    resolution: {integrity: sha512-u+h43R6U8xXDt2vzUaVP3VwjjLyOJk6uEciZS8OSyziUQGOwmk+l+4drxcsDboHXwyTaqS1INebghmWMRxq3LA==}
     dev: true
 
   /@types/resolve/1.17.1:
     resolution: {integrity: sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw==}
     dependencies:
-      '@types/node': 18.7.23
+      '@types/node': 18.8.0
     dev: true
 
   /@types/sax/1.2.4:
@@ -2017,7 +2029,7 @@ packages:
     dependencies:
       '@babel/core': 7.19.3
       '@babel/helper-define-polyfill-provider': 0.3.3_@babel+core@7.19.3
-      core-js-compat: 3.25.3
+      core-js-compat: 3.25.4
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2275,8 +2287,8 @@ packages:
       safe-buffer: 5.1.2
     dev: true
 
-  /core-js-compat/3.25.3:
-    resolution: {integrity: sha512-xVtYpJQ5grszDHEUU9O7XbjjcZ0ccX3LgQsyqSvTnjX97ZqEgn9F5srmrwwwMtbKzDllyFPL+O+2OFMl1lU4TQ==}
+  /core-js-compat/3.25.4:
+    resolution: {integrity: sha512-gCEcIEEqCR6230WroNunK/653CWKhqyCKJ9b+uESqOt/WFJA8B4lTnnQFdpYY5vmBcwJAA90Bo5vXs+CVsf6iA==}
     dependencies:
       browserslist: 4.21.4
     dev: true
@@ -3912,7 +3924,7 @@ packages:
     resolution: {integrity: sha512-KWYVV1c4i+jbMpaBC+U++4Va0cp8OisU185o73T1vo99hqi7w8tSJfUXYswwqqrjzwxa6KpRK54WhPvwf5w6PQ==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 18.7.23
+      '@types/node': 18.8.0
       merge-stream: 2.0.0
       supports-color: 7.2.0
     dev: true
@@ -5113,6 +5125,14 @@ packages:
       - '@vue/composition-api'
       - encoding
       - supports-color
+    dev: true
+
+  /vuepress-plugin-meting/0.3.3_vue@3.2.40:
+    resolution: {integrity: sha512-HTF5h4k8CuSgDSAFNBtfDE33bn5hap96C8h3owrQqKP639d5Bht6PvM34p8MMIzuVseHL2NDlHlKLLYPNzp31Q==}
+    dependencies:
+      '@moefe/vue-aplayer': 2.0.0-beta.5_vue@3.2.40
+    transitivePeerDependencies:
+      - vue
     dev: true
 
   /vuepress-plugin-photo-swipe/2.0.0-beta.106:

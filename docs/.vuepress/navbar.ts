@@ -7,6 +7,7 @@ export default navbar([
   { text: "Java", icon: "java", link: "/01java/" },
   { text: "框架", icon: "leaf", link: "/20frame/" },
   { text: "算法", icon: "dart", link: "/40algo/" },
+  { text: "工具", icon: "module", link: "/50tools/" },
   {
     text: "随笔",
     icon: "edit",
