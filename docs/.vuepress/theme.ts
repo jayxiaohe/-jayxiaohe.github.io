@@ -102,7 +102,7 @@ export default hopeTheme({
     comment: {
       // Using Giscus
       provider: "Giscus",
-      repo: "jayxiaohe.github.io/giscus-discussions",
+      repo: "jayxiaohe/jayxiaohe.github.io",
       repoId: "R_kgDOG7ZcUg",
       category: "Announcements",
       categoryId: "DIC_kwDOG7ZcUs4CRxJH",

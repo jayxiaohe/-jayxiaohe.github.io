@@ -47,7 +47,7 @@ toc: false
 <center><img src="/qr.jpg" width = "150" height = "150"/></center>
 <center>添加时请注明来意，谢谢~~~</center>
 
-<br/>
-<!-- 小熊猫
-<img src="/img/panda-waving.png" class="panda no-zoom" style="width: 130px;height: 115px;opacity: 0.8;margin-bottom: -4px;padding-bottom:0;position: fixed;bottom: 0;left: 0.5rem;z-index: 1;">  -->
-
+<br/><br/><br/>
+<hr/>
+<center>
+<iframe frameborder="yes" border="3" marginwidth="0" marginheight="0" width=60% height=450 src="//music.163.com/outchain/player?type=0&id=7311154894&auto=1&height=430"></iframe></center>
