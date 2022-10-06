@@ -1,11 +1,13 @@
 ---
 title: N叉树
-icon: condition
+icon: tree
 dir:
   order: 50
-  link: true
+  link: false
 date: 2020-11-18 17:43:57
 index: false
+timeline: false
+article: false
 ---
 
 

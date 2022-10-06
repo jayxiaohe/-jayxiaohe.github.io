@@ -1,7 +1,10 @@
 ---
 title: Java
 index: false
-icon: java
+icon: java1
 permalink: /01java/
+comment: false
+timeline: false
+article: false
 ---
 

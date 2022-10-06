@@ -22,3 +22,5 @@ urls.txt
 # caches
 docs/.vuepress/.cache
 docs/.vuepress/.temp
+
+*.zip

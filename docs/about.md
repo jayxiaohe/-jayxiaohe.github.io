@@ -3,8 +3,10 @@ title: 关于
 date: 2019-12-25 14:27:01
 permalink: /about
 sidebar: false
-article: false
 toc: false
+icon: about
+timeline: false
+article: false
 ---
 
 ::: tip 🎈🎈🎈
@@ -33,7 +35,7 @@ toc: false
 
 
 ## 👨‍💻 博主是谁
-
+<!--
 <br/>
 <Badge text="陕西人，现居重庆"  vertical="middle"/>
 <br/><br/>
@@ -41,13 +43,39 @@ toc: false
 <br/><br/>
 <Badge text="喜欢杰伦18年" type="error" vertical="middle"/>
 <br/>
+-->
 
-## 📬 联系我
+@slidestart
 
-<center><img src="/qr.jpg" width = "150" height = "150"/></center>
-<center>添加时请注明来意，谢谢~~~</center>
+## He PengTao
+
+
+陕西人，现居重庆
+
+Java 程序员
+
+---
+
+## 爱好
+
+周杰伦
+
+编程
+
+英雄联盟
+
+爬山
+
+---
+
+## 微信
+
+<center><img src="/qr.jpg" width = "350" height = "350"/></center>
+
+@slideend
+
 
 <br/><br/><br/>
 <hr/>
 <center>
-<iframe frameborder="yes" border="3" marginwidth="0" marginheight="0" width=60% height=450 src="//music.163.com/outchain/player?type=0&id=7311154894&auto=1&height=430"></iframe></center>
+<iframe frameborder="yes" border="3" marginwidth="0" marginheight="0" width=90% height=450 src="//music.163.com/outchain/player?type=0&id=7311154894&auto=1&height=430"></iframe></center>

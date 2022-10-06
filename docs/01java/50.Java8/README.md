@@ -1,11 +1,13 @@
 ---
 title: Java8
-icon: change
+icon: rocket
 dir:
   order: 50
-  link: true
+  link: false
 date: 2020-11-18 17:43:57
-index: true
+index: false
+timeline: false
+article: false
 ---
 
 >  Java8的相关操作总结。
