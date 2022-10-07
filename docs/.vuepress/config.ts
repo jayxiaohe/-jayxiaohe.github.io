@@ -9,7 +9,7 @@ export default defineUserConfig({
     "/": {
       lang: "zh-CN",
       title: "Mr.He",
-      description: "何鹏涛的数字花园111",
+      description: "vuepress博客，主要记录Java相关笔记",
     },
   },
 

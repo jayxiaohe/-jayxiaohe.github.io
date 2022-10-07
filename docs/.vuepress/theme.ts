@@ -13,7 +13,7 @@ export default hopeTheme({
   iconPrefix: 'iconfont icon-',
   iconAssets: "//at.alicdn.com/t/c/font_3572690_7s7nz7l38h.css",
 
-  // logo: "/flower.svg",
+  logo: "/favicon.ico",
   repo: "jayxiaohe/jayxiaohe.github.io",
   docsDir: "docs",
   docsBranch: "master",
