@@ -1,6 +1,6 @@
 ---
 title: git
-icon: leaf
+icon: git
 dir:
   order: 500
   link: false

@@ -11,7 +11,7 @@ export default hopeTheme({
   },
 
   iconPrefix: 'iconfont icon-',
-  iconAssets: "//at.alicdn.com/t/c/font_3572690_7s7nz7l38h.css",
+  iconAssets: "//at.alicdn.com/t/c/font_3572690_adtulxanpg4.css",
 
   logo: "/favicon.ico",
   repo: "jayxiaohe/jayxiaohe.github.io",
@@ -32,6 +32,7 @@ export default hopeTheme({
 
   blog: {
     avatar: "/logo.svg",
+	roundAvatar: true,
     medias: {
       Wechat: "/about/",
       Email: "mailto:pt.he@qq.com",

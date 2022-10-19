@@ -1,6 +1,6 @@
 ---
 title: docker
-icon: leaf
+icon: docker
 dir:
   order: 400
   link: false

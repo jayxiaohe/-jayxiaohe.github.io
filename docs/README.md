@@ -3,11 +3,11 @@ home: true
 layout: Blog
 icon: home
 title: 
-heroImage: /flower.svg
-heroText: 何鹏涛的数字花园
-tagline: 『 别担心，这里的夏天很长 』 
+heroImage: /logo.png
+heroText: Notes & Blog
+tagline: <br><br>『 别担心，这里的夏天很长 』
 heroFullScreen: true
-bgImage: /bg/bg3.jpg
+bgImage: https://api.btstu.cn/sjbz/api.php?lx=fengjing&format=images
 footer: 🍃 你灵魂的欲望，是你命运的先知。
 ---
 
@@ -15,7 +15,17 @@ footer: 🍃 你灵魂的欲望，是你命运的先知。
 
 <!--
 
+bgImage: /bg/bg3.jpg
+
+heroText: 何鹏涛的数字花园
+
+heroImage: /flower.svg
+
 heroText: 墙头雨细垂纤草，水面风回聚落花。
+
+
+
+
 
 projects:
   - icon: project
