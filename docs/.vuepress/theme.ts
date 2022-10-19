@@ -18,7 +18,7 @@ export default hopeTheme({
   docsDir: "docs",
   docsBranch: "master",
   // pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
-  pageInfo: ["Original", "Date", "Category", "Tag"],
+  pageInfo: ["Original", "Date", "Category", "Tag", "ReadingTime"],
 
   // 是否在导航栏内显示仓库链接，默认为 `true`
   repoDisplay: false,
