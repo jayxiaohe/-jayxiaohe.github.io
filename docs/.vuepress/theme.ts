@@ -118,12 +118,14 @@ export default hopeTheme({
       /**
        * Using Giscus
        */
-      provider: "Giscus",
+      /****
+	  provider: "Giscus",
       repo: "jayxiaohe/jayxiaohe.github.io",
       repoId: "R_kgDOG7ZcUg",
       category: "Announcements",
       categoryId: "DIC_kwDOG7ZcUs4CRxJH",
-
+	  */
+		
       /**
        * Using Twikoo
        */
@@ -133,8 +135,26 @@ export default hopeTheme({
       /**
        * Using Waline
        */
-      // provider: "Waline",
-      // serverURL: "https://vuepress-theme-hope-comment.vercel.app",
+      provider: "Waline",
+      serverURL: "https://waline-hope.vercel.app/",
+	  emoji: [
+	    '//unpkg.com/@waline/emojis@1.1.0/qq',
+		'//unpkg.com/@waline/emojis@1.1.0/weibo',
+		'//unpkg.com/@waline/emojis@1.1.0/bilibili',
+	  ],
+	  search: false,
+	  reaction: true, // 开启反应
+	  /***
+	  reaction: [
+		'https://unpkg.com/@waline/emojis@1.1.0/weibo/weibo_heart_eyes.png',
+		'https://unpkg.com/@waline/emojis@1.1.0/weibo/weibo_dog_consider.png',
+		'https://unpkg.com/@waline/emojis@1.1.0/weibo/weibo_dog_joy.png',		
+		'https://unpkg.com/@waline/emojis@1.1.0/weibo/weibo_sob.png',
+	  ],
+	  ***/
+	  copyright: false,
+	  wordLimit: 100,
+	  dark: "auto",
     },
 
     // Disable features you don't want here
