@@ -11,7 +11,7 @@ export default hopeTheme({
   },
 
   iconPrefix: 'iconfont icon-',
-  iconAssets: "//at.alicdn.com/t/c/font_3572690_adtulxanpg4.css",
+  iconAssets: "//at.alicdn.com/t/c/font_3572690_rdoarkyqqg.css",
 
   logo: "/favicon.ico",
   repo: "jayxiaohe/jayxiaohe.github.io",

@@ -3,6 +3,7 @@ title: Collections工具类
 order: 20
 date: 2022-03-28 23:05:31
 permalink: /01java/20coll/collections/
+icon: wenzhang
 categories:
   - 学习笔记
   - Java容器
