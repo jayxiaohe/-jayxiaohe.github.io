@@ -4,7 +4,7 @@ import { zhSidebar, zhSidebar } from "./sidebar/zh.js";
 
 export default hopeTheme({
   hostname: "https://i.iyes.life",
-
+  contributors: false, // 不显示贡献者
   author: {
     name: "Mr.He",
     url: "https://i.iyes.life",
@@ -136,7 +136,7 @@ export default hopeTheme({
        * Using Waline
        */
       provider: "Waline",
-      serverURL: "https://waline-hope.vercel.app/",
+      serverURL: "https://comment.iyes.life/",
 	  emoji: [
 	    '//unpkg.com/@waline/emojis@1.1.0/qq',
 		'//unpkg.com/@waline/emojis@1.1.0/weibo',
@@ -155,6 +155,7 @@ export default hopeTheme({
 	  copyright: false,
 	  wordLimit: 100,
 	  dark: "auto",
+	  login: "disable",
     },
 
     // Disable features you don't want here
