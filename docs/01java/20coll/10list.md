@@ -3,6 +3,7 @@ title: List
 order: 10
 date: 2022-03-02 00:06:53
 permalink: /01java/20coll/list/
+icon: wenzhang
 categories:
   - 学习笔记
   - Java容器
@@ -166,7 +167,7 @@ public static <T> int binarySearch(List<? extends Comparable<? super T>> list, T
    
 
 3. 使用Java8的`stream`(推荐)
-   
+  
    ```java
    Integer [] myArray = { 1, 2, 3 };
    List myList = Arrays.stream(myArray).collect(Collectors.toList());

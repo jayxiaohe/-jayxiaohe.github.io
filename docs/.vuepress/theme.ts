@@ -4,14 +4,14 @@ import { zhSidebar, zhSidebar } from "./sidebar/zh.js";
 
 export default hopeTheme({
   hostname: "https://i.iyes.life",
-
+  contributors: false, // 不显示贡献者
   author: {
     name: "Mr.He",
     url: "https://i.iyes.life",
   },
 
   iconPrefix: 'iconfont icon-',
-  iconAssets: "//at.alicdn.com/t/c/font_3572690_adtulxanpg4.css",
+  iconAssets: "//at.alicdn.com/t/c/font_3572690_rdoarkyqqg.css",
 
   logo: "/favicon.ico",
   repo: "jayxiaohe/jayxiaohe.github.io",
@@ -118,12 +118,14 @@ export default hopeTheme({
       /**
        * Using Giscus
        */
-      provider: "Giscus",
+      /****
+	  provider: "Giscus",
       repo: "jayxiaohe/jayxiaohe.github.io",
       repoId: "R_kgDOG7ZcUg",
       category: "Announcements",
       categoryId: "DIC_kwDOG7ZcUs4CRxJH",
-
+	  */
+		
       /**
        * Using Twikoo
        */
@@ -133,8 +135,19 @@ export default hopeTheme({
       /**
        * Using Waline
        */
-      // provider: "Waline",
-      // serverURL: "https://vuepress-theme-hope-comment.vercel.app",
+      provider: "Waline",
+      serverURL: "https://comment.iyes.life/",
+	  emoji: [
+	    '//unpkg.com/@waline/emojis@1.1.0/qq',
+		'//unpkg.com/@waline/emojis@1.1.0/weibo',
+		'//unpkg.com/@waline/emojis@1.1.0/bilibili',
+	  ],
+	  search: false,
+	  reaction: true, // 开启反应
+	  copyright: false,
+	  wordLimit: 100,
+	  dark: "auto",
+	  login: "disable",
     },
 
     // Disable features you don't want here
