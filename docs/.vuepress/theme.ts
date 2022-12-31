@@ -5,6 +5,8 @@ import { zhSidebar, zhSidebar } from "./sidebar/zh.js";
 export default hopeTheme({
   hostname: "https://i.iyes.life",
   contributors: false, // 不显示贡献者
+  editLink: false, // 不显示编辑链接
+  lastUpdated: false, // 不显示最后更新时间
   author: {
     name: "Mr.He",
     url: "https://i.iyes.life",
@@ -18,7 +20,7 @@ export default hopeTheme({
   docsDir: "docs",
   docsBranch: "master",
   // pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
-  pageInfo: ["Original", "Date", "Category", "Tag", "ReadingTime"],
+  pageInfo: ["Original", "Category", "Tag", "ReadingTime", "Word"],
 
   // 是否在导航栏内显示仓库链接，默认为 `true`
   repoDisplay: false,
@@ -85,7 +87,7 @@ export default hopeTheme({
 
       footer: "🍃 你灵魂的欲望，是你命运的先知。",
 
-      displayFooter: true,
+      displayFooter: false,
 
       blog: {
         description: "后端开发",
@@ -147,7 +149,7 @@ export default hopeTheme({
 	  copyright: false,
 	  wordLimit: 100,
 	  dark: "auto",
-	  login: "disable",
+	  login: "enable",
     },
 
     // Disable features you don't want here

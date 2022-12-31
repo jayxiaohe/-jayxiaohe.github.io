@@ -26,7 +26,7 @@ article: false
 
 - 主题：[hope  v2.x](https://vuepress-theme-hope.github.io/v2/zh/)
 - 编辑工具：typora [相关总结](/50tools/typora/)
-- 托管：[netlify](https://www.netlify.com/)
+- 托管：[netlify](https://www.netlify.com/)、[vercel](https://vercel.com/)、[Webify](https://webify.cloudbase.net/)、[github pages](https://github.com/)
 
 
 
@@ -78,4 +78,4 @@ Java 程序员
 <br/><br/><br/>
 <hr/>
 <center>
-<iframe frameborder="yes" border="3" marginwidth="0" marginheight="0" width=90% height=450 src="//music.163.com/outchain/player?type=0&id=7311154894&auto=1&height=430"></iframe></center>
+<iframe frameborder="yes" border="3" marginwidth="0" marginheight="0" width=90% height=450 src="//music.163.com/outchain/player?type=0&id=3205879125&auto=1&height=430"></iframe></center>
