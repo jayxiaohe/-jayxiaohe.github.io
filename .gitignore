@@ -20,7 +20,9 @@ urls.txt
 .DS_Store
 
 # caches
-docs/.vuepress/.cache
-docs/.vuepress/.temp
+src/.vuepress/.cache/
+src/.vuepress/.temp/
+src/.vuepress/dist/
+
 
 *.zip
