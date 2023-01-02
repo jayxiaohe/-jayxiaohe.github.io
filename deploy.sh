@@ -8,7 +8,7 @@ set -e
 pnpm docs:build
 
 # 进入生成的文件夹
-cd docs/.vuepress/dist
+cd src/.vuepress/dist
 
 # deploy to github pages
 echo 'i.iyes.life' > CNAME
@@ -41,4 +41,4 @@ git push -f $githubUrl master:gh-pages # 推送到github gh-pages分支
 # git push -f $codingUrl master # 推送到coding
 
 cd -
-rm -rf docs/.vuepress/dist
+rm -rf src/.vuepress/dist
