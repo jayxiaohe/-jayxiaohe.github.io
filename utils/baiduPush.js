@@ -6,6 +6,7 @@ const path = require('path');
 const chalk = require('chalk');
 const matter = require('gray-matter'); // FrontMatter解析器 https://github.com/jonschlinkert/gray-matter
 const readFileList = require('./modules/readFileList');
+//const readFileList = import('./modules/readFileList');
 const urlsRoot = path.join(__dirname, '..', 'urls.txt'); // 百度链接推送文件
 const DOMAIN = process.argv.splice(2)[0]; // 获取命令行传入的参数
 
@@ -20,8 +21,9 @@ if (DOMAIN) {
  */
 function main() {
   fs.writeFileSync(urlsRoot, DOMAIN)
+  console.log('00000000000');
   const files = readFileList(); // 读取所有md文件数据
-
+  console.log('111111111');
   files.forEach(file => {
     const { data } = matter(fs.readFileSync(file.filePath, 'utf8'));
 
@@ -31,4 +33,5 @@ function main() {
       fs.appendFileSync(urlsRoot, link);
     }
   })
+  console.log('22222222222');
 }

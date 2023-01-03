@@ -3,7 +3,7 @@
  */
 const fs = require('fs'); // 文件模块
 const path = require('path'); // 路径模块
-const docsRoot = path.join(__dirname, '..', '..', 'docs'); // docs文件路径
+const docsRoot = path.join(__dirname, '..', '..', 'src'); // docs文件路径
 
 function readFileList(dir = docsRoot, filesList = []) {
   const files = fs.readdirSync(dir);
@@ -13,7 +13,7 @@ function readFileList(dir = docsRoot, filesList = []) {
       if (stat.isDirectory() && item !== '.vuepress') {
         readFileList(path.join(dir, item), filesList);  //递归读取文件
       } else {
-        if(path.basename(dir) !== 'docs'){ // 过滤docs目录级下的文件
+        if(path.basename(dir) !== 'src'){ // 过滤docs目录级下的文件
 
           const fileNameArr = path.basename(filePath).split('.')
           let name = null, type = null;
