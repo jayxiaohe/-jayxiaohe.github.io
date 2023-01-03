@@ -13,6 +13,9 @@ export default defineUserConfig({
     },
   },
 
+  head: [
+	['script', {type: 'text/javascript', src: '/js/linkcard.js'}]
+  ],
   plugins: [
     searchProPlugin({
       locales: {
