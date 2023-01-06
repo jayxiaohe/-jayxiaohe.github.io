@@ -4,7 +4,7 @@ layout: BlogHome
 icon: home
 title: 
 heroText: '『 每一字节，都在书写拯救之路。 』—— 源计划 艾希'
-tagline: <div style="color:#ffffff";font:blod>记录所学、所思、所想</div>
+tagline: 记录所学、所思、所想
 heroFullScreen: true
 bgImage: https://dogefs.s3.ladydaily.com/~/source/wallhaven/full/4v/wallhaven-4vg7pp.png?w=2560&h=1440&fmt=webp
 footer: 🍃 你灵魂的欲望，是你命运的先知。
