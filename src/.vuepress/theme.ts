@@ -38,7 +38,7 @@ export default hopeTheme({
   },
   blog: {
     avatar: "/wx.jpg",
-    roundAvatar: true,
+    roundAvatar: false,
     medias: {
       Wechat: "/about/",
       Email: "mailto:pt.he@qq.com",
@@ -153,7 +153,19 @@ export default hopeTheme({
 		'//unpkg.com/@waline/emojis@1.1.0/bilibili',
 	  ],
 	  search: false,
-	  reaction: true, // 开启反应
+	  // reaction: true, // 开启反应
+	  reaction: [
+		'https://unpkg.com/@waline/emojis@1.1.0/bilibili/bb_heart_eyes.png',
+		'https://unpkg.com/@waline/emojis@1.1.0/bilibili/bb_antic.png',
+		'https://unpkg.com/@waline/emojis@1.1.0/bilibili/bb_confused.png',
+		'https://unpkg.com/@waline/emojis@1.1.0/bilibili/bb_question_mask.png',
+	  ],
+	  locale: {
+		reaction0: '很棒',
+		reaction1: '不错',
+		reaction2: '一般',
+		reaction3: '？？？',
+	  },
 	  copyright: false,
 	  wordLimit: 100,
 	  dark: "auto",
