@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      chalk:
+        specifier: ^5.3.0
+        version: 5.3.0
     devDependencies:
       '@vuepress/bundler-vite':
         specifier: 2.0.0-rc.14
@@ -17,9 +21,6 @@ importers:
       '@vuepress/plugin-pwa':
         specifier: ^1.9.10
         version: 1.9.10
-      '@vuepress/plugin-watermark':
-        specifier: 2.0.0-rc.41
-        version: 2.0.0-rc.41(vuepress@2.0.0-rc.14(@vuepress/bundler-vite@2.0.0-rc.14(@types/node@22.4.0)(sass@1.77.8))(vue@3.4.38))
       '@waline/client':
         specifier: ^3.3.0
         version: 3.3.0
@@ -901,11 +902,6 @@ packages:
 
   '@vuepress/plugin-watermark@2.0.0-rc.39':
     resolution: {integrity: sha512-16BZnwIZa+AEBcnXI59udHX04/VLiCwrdy8wsdBf3vy5co8/PPyG3iDC1Tlwbkotsuz/+J23KG7MjN4Fr9dFEQ==}
-    peerDependencies:
-      vuepress: 2.0.0-rc.14
-
-  '@vuepress/plugin-watermark@2.0.0-rc.41':
-    resolution: {integrity: sha512-v3yQMrfKaYQIvBNdTv7LVQrBfbznApMMQfwOuxt61+KvmhEazkGAXSQch6IyNuuQQlGmmRZYt4H/4LGy5Sa60w==}
     peerDependencies:
       vuepress: 2.0.0-rc.14
 
@@ -3417,15 +3413,6 @@ snapshots:
   '@vuepress/plugin-watermark@2.0.0-rc.39(vuepress@2.0.0-rc.14(@vuepress/bundler-vite@2.0.0-rc.14(@types/node@22.4.0)(sass@1.77.8))(vue@3.4.38))':
     dependencies:
       '@vuepress/helper': 2.0.0-rc.39(vuepress@2.0.0-rc.14(@vuepress/bundler-vite@2.0.0-rc.14(@types/node@22.4.0)(sass@1.77.8))(vue@3.4.38))
-      vue: 3.4.38
-      vuepress: 2.0.0-rc.14(@vuepress/bundler-vite@2.0.0-rc.14(@types/node@22.4.0)(sass@1.77.8))(vue@3.4.38)
-      watermark-js-plus: 1.5.3
-    transitivePeerDependencies:
-      - typescript
-
-  '@vuepress/plugin-watermark@2.0.0-rc.41(vuepress@2.0.0-rc.14(@vuepress/bundler-vite@2.0.0-rc.14(@types/node@22.4.0)(sass@1.77.8))(vue@3.4.38))':
-    dependencies:
-      '@vuepress/helper': 2.0.0-rc.41(vuepress@2.0.0-rc.14(@vuepress/bundler-vite@2.0.0-rc.14(@types/node@22.4.0)(sass@1.77.8))(vue@3.4.38))
       vue: 3.4.38
       vuepress: 2.0.0-rc.14(@vuepress/bundler-vite@2.0.0-rc.14(@types/node@22.4.0)(sass@1.77.8))(vue@3.4.38)
       watermark-js-plus: 1.5.3

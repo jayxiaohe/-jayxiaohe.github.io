@@ -2,13 +2,13 @@
   "name": "myblog",
   "version": "2.0.0",
   "license": "MIT",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "docs:build": "vuepress-vite build src",
     "docs:clean-dev": "vuepress-vite dev src --clean-cache",
     "docs:dev": "vuepress-vite dev src",
     "docs:update-package": "pnpm dlx vp-update",
-	"deploy": "bash deploy.sh",
+    "deploy": "bash deploy.sh",
     "baiduPush": "node utils/baiduPush.js https://i.iyes.life && bash baiduPush.sh"
   },
   "devDependencies": {
@@ -21,5 +21,8 @@
     "vuepress": "2.0.0-rc.14",
     "vuepress-plugin-search-pro": "2.0.0-rc.52",
     "vuepress-theme-hope": "2.0.0-rc.52"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0"
   }
 }

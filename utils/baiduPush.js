@@ -1,3 +1,4 @@
+/* eslint-disable node/no-unsupported-features/es-builtins */
 /**
  * 生成百度链接推送文件
  */
