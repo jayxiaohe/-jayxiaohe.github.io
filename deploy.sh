@@ -18,11 +18,12 @@ if [ -z "$GITHUB_TOKEN" ]; then
   githubUrl=git@github.com:jayxiaohe/jayxiaohe.github.io.git
 else
   msg='来自github actions的自动部署'
-  githubUrl=https://jayxiaohe:${GITHUB_TOKEN}@github.com/jayxiaohe/jayxiaohe.github.io.git
-  git config --global user.name "jayxiaohe"
+  #githubUrl=https://jayxiaohe:${GITHUB_TOKEN}@github.com/jayxiaohe/jayxiaohe.github.io.git
+  #git config --global user.name "jayxiaohe"
+  #git config --global user.email "495302067@qq.com"
+  githubUrl=https://github.com/jayxiaohe/jayxiaohe.github.io.git
+  git config --global user.name ${GITHUB_TOKEN}
   git config --global user.email "495302067@qq.com"
-fi
-git init
 git add -A
 git commit -m "${msg}"
 git push -f $githubUrl master:gh-pages # 推送到github gh-pages分支
