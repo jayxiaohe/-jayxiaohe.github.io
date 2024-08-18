@@ -2,7 +2,7 @@
   "name": "myblog",
   "version": "2.0.0",
   "license": "MIT",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "docs:build": "vuepress-vite build src",
     "docs:clean-dev": "vuepress-vite dev src --clean-cache",
