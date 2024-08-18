@@ -22,8 +22,9 @@ else
   #git config --global user.name "jayxiaohe"
   #git config --global user.email "495302067@qq.com"
   githubUrl=https://github.com/jayxiaohe/jayxiaohe.github.io.git
-  git config --global user.name "${GITHUB_TOKEN}"
+  git config --global user.name "$GITHUB_TOKEN"
   git config --global user.email "495302067@qq.com"
+fi
 git add -A
 git commit -m "${msg}"
 git push -f $githubUrl master:gh-pages # 推送到github gh-pages分支
@@ -41,5 +42,5 @@ git push -f $githubUrl master:gh-pages # 推送到github gh-pages分支
 # git commit -m "${msg}"
 # git push -f $codingUrl master # 推送到coding
 
-cd -
 rm -rf src/.vuepress/dist
+echo "done"
