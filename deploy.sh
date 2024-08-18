@@ -22,7 +22,7 @@ else
   #git config --global user.name "jayxiaohe"
   #git config --global user.email "495302067@qq.com"
   githubUrl=https://github.com/jayxiaohe/jayxiaohe.github.io.git
-  git config --global user.name ${GITHUB_TOKEN}
+  git config --global user.name "${GITHUB_TOKEN}"
   git config --global user.email "495302067@qq.com"
 git add -A
 git commit -m "${msg}"
