@@ -1,23 +1,23 @@
 {
-  "name": "myhope",
+  "name": "myblog",
   "version": "2.0.0",
-  "description": "myblog",
   "license": "MIT",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
-    "docs:build": "vuepress build src",
-    "docs:clean-dev": "vuepress dev src --clean-cache",
-    "docs:dev": "vuepress dev src",
-	"deploy": "bash deploy.sh",
-    "baiduPush": "node utils/baiduPush.js https://i.iyes.life && bash baiduPush.sh"
+    "docs:build": "vuepress-vite build src",
+    "docs:clean-dev": "vuepress-vite dev src --clean-cache",
+    "docs:dev": "vuepress-vite dev src",
+    "docs:update-package": "pnpm dlx vp-update"
   },
   "devDependencies": {
-    "@vuepress/client": "2.0.0-beta.60",
-    "vue": "^3.2.45",
-    "vuepress": "2.0.0-beta.60",
-    "vuepress-plugin-search-pro": "2.0.0-beta.147",
-    "vuepress-theme-hope": "2.0.0-beta.147",
-	"gray-matter": "4.0.3",
-	"chalk": "^4.1.2"
+    "@vuepress/bundler-vite": "2.0.0-rc.14",
+    "@vuepress/plugin-prismjs": "2.0.0-rc.41",
+    "@vuepress/plugin-pwa": "^1.9.10",
+    "@waline/client": "^3.3.0",
+    "reveal.js": "^5.1.0",
+    "vue": "^3.4.31",
+    "vuepress": "2.0.0-rc.14",
+    "vuepress-plugin-search-pro": "2.0.0-rc.52",
+    "vuepress-theme-hope": "2.0.0-rc.52"
   }
 }

@@ -4,10 +4,10 @@ order: 15
 date: 2022-03-04 21:03:14
 permalink: /01java/20coll/map/
 icon: wenzhang
-categories:
+category:
   - 学习笔记
   - Java容器
-tags:
+tag:
   - 基础
 ---
 

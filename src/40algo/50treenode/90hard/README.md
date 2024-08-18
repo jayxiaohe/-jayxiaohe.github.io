@@ -1,9 +1,9 @@
 ---
-title: Redis
-icon: redis1
+title: hard
+icon: icon-nandu3
 dir:
   order: 90
-  link: false
+  link: true
 date: 2020-11-18 17:43:57
 index: false
 timeline: false
@@ -13,5 +13,7 @@ article: false
 
 
 
-## SpringBoot
+## N叉树-hard类型
+
+
 

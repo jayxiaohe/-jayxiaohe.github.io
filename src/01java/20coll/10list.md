@@ -4,10 +4,10 @@ order: 10
 date: 2022-03-02 00:06:53
 permalink: /01java/20coll/list/
 icon: wenzhang
-categories:
+category:
   - 学习笔记
   - Java容器
-tags:
+tag:
   - 基础
 ---
 > List是一个有序的、可重复的集合，扩展`Collection`接口的接口，在`java.util`包下，提供增删改查数据的基本功能，且可以通过索引来插入替换和删除集合元素的方法。

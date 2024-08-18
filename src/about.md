@@ -33,46 +33,9 @@ article: false
 此博客所有内容的作用均为**记录**。内容来自个人总结及网络收集。如有错误、侵权可以联系我。谢谢！
 
 
-
-## 👨‍💻 博主是谁
-<!--
-<br/>
-<Badge text="陕西人，现居重庆"  vertical="middle"/>
-<br/><br/>
-<Badge text="Java程序猿" type="warning" vertical="middle"/>
-<br/><br/>
-<Badge text="喜欢杰伦18年" type="error" vertical="middle"/>
-<br/>
--->
-
-@slidestart
-
-## He PengTao
-
-
-陕西人，现居重庆
-
-Java 程序员
-
----
-
-## 爱好
-
-周杰伦
-
-编程
-
-英雄联盟
-
-爬山
-
----
-
 ## 微信
 
 <center><img src="/qr.jpg" width = "350" height = "350"/></center>
-
-@slideend
 
 
 <br/><br/><br/>
